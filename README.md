@@ -1,2 +1,2 @@
 # partner
-Wordpress stack for Partner Psychological Clinic website.
+Vagrant/Wordpress Stack for Partner Psychological Clinic website.
