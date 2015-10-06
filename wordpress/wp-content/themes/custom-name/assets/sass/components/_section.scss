@@ -22,10 +22,14 @@ section {
 
 .section--text {
     margin: 60px auto;
-    
+
     p {
         font-family: $lato;
         font-size: 14px;
         line-height: 25px;
     }
+}
+
+.section--image {
+    padding: 0;
 }

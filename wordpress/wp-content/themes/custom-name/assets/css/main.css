@@ -1317,15 +1317,24 @@ a {
   text-transform: underline;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 @font-face {
   font-family: Lovelo Black;
   src: url("../fonts/Lovelo Black.otf");
 }
 header {
   padding: 20px;
-  height: 50px;
+  height: 70px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.header__logo {
+  max-width: 30px;
 }
 
 section {
@@ -1361,6 +1370,10 @@ section {
   font-family: "Lato";
   font-size: 14px;
   line-height: 25px;
+}
+
+.section--image {
+  padding: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

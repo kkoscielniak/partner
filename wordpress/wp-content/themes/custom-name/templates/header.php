@@ -1,5 +1,5 @@
 <header>
-    <div class="logo">
+    <div class="header__logo">
         <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-mobile.png"></a>
     </div>
 

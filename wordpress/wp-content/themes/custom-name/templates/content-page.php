@@ -9,3 +9,7 @@
     <p>Pomagamy rozwiązywać problemy wychowawcze i skutecznie radzić sobie z trudnymi sytuacjami. Wspieramy w tym jak być dobrym i skutecznym rodzicem, i jak stwarzać dziecku i nastolatkowi warunki do pełnego, wartościowego rozwoju. </p>
     <!-- <a href="#">Czytaj więcej</a> -->
 </section>
+
+<section class="section--image">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/girl-photo--mobile.png">
+</section>
