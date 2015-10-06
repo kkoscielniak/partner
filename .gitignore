@@ -37,3 +37,5 @@ node_modules
 /wordpress/wp-content/themes/custom-name/assets/vendors
 
 .sass-cache
+
+assets/css/
