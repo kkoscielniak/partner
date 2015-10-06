@@ -1,0 +1,21 @@
+section {
+    height: 333px;
+    padding: 0 20px;
+}
+
+.section__page-title {
+    position: relative;
+    background-image: url('../img/page-title--mobile.png');
+    background-size: cover;
+}
+
+.section__page-title-text {
+    @include vertical-align();
+
+    font-family: $levato-black;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+
+}

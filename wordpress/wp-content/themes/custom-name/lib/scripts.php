@@ -32,7 +32,7 @@ function roots_scripts() {
     $assets     = array(
       'css'       => '/assets/css/main.min.css?' . $assets['assets/css/main.min.css']['hash'],
       'js'        => '/assets/js/scripts.min.js?' . $assets['assets/js/scripts.min.js']['hash'],
-      'modernizr' => '/assets/js/vendor/modernizr.min.js',
+      'modernizr' => '/assets/js/vendors/modernizr.min.js',
       'vendor'    => '/assets/js/vendor.min.js' . $assets['assets/js/vendor.min.js']['hash']
     );
   }

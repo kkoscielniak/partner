@@ -1,2 +1,6 @@
-<?php the_content(); ?>
-<?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
+<section class="section__page-title">
+    <p class="section__page-title-text">
+        Pomagamy nauczyć Ciebie troszczyć się o siebie!
+    </p>
+
+</section>
