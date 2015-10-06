@@ -13,8 +13,9 @@
     "assets/vendor"
   ],
   "dependencies": {
-    "modernizr": "2.8.2",
-    "jquery": "1.11.1"
+    "jquery": "1.11.1",
+    "modernizr": "~3.1.0",
+    "webfontloader": "~1.6.8"
   },
   "devDependencies": {
     "csswizardry-grids": "~2.2.0",
