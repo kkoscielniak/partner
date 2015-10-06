@@ -33,3 +33,10 @@ section {
 .section--image {
     padding: 0;
 }
+
+// background-image property is set up by inline-style
+.section--bg {
+    background-size: cover;
+    margin: 0;
+    padding: 60px 20px;
+}

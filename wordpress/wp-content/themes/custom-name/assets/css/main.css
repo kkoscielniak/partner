@@ -1376,4 +1376,11 @@ section {
   padding: 0;
 }
 
+.section--bg {
+  -webkit-background-size: cover;
+          background-size: cover;
+  margin: 0;
+  padding: 60px 20px;
+}
+
 /*# sourceMappingURL=main.css.map */
