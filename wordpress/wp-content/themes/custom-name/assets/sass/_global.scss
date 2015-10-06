@@ -2,3 +2,12 @@ body {
     background-color: $bg-color;
     color: $base-font-color;
 }
+
+h2 {
+    margin-top: 60px;
+    margin-bottom: 0;
+    font-family: $levato-black;
+    font-size: 30px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}

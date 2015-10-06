@@ -80,3 +80,26 @@ function roots_google_analytics() { ?>
 if (GOOGLE_ANALYTICS_ID && (WP_ENV !== 'production' || !current_user_can('manage_options'))) {
   add_action('wp_footer', 'roots_google_analytics', 20);
 }
+
+function webfonts() { ?>
+<script>
+    WebFontConfig = {
+        google: {
+            families: ['Lato']
+        },
+        active: function() {
+            // active event
+        }
+    };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = '<?php echo get_template_directory_URI(); ?>/assets/vendors/webfontloader/webfontloader.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
+
+<?php }
+add_action('wp_head', 'webfonts', 20);
