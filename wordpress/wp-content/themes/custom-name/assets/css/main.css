@@ -1310,7 +1310,15 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-family: "Lovelo Black";
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
 a {
+  color: #53524f;
   font-family: "Lovelo Black";
   font-size: 14px;
   letter-spacing: 0.15em;
@@ -1372,6 +1380,14 @@ section {
   line-height: 25px;
 }
 
+.section--text-small {
+  text-align: center;
+}
+.section--text-small .section--text-small__paragraph {
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .section--image {
   padding: 0;
 }
@@ -1381,6 +1397,57 @@ section {
           background-size: cover;
   margin: 0;
   padding: 60px 20px;
+}
+
+footer {
+  padding: 60px 20px 20px;
+  background-color: #FFFFFF;
+}
+
+.footer__title {
+  line-height: 40px;
+}
+
+.footer__image-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.footer__image {
+  max-width: 160px;
+}
+
+.footer__address, .footer__office-hours {
+  margin-top: 0;
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.footer__office-hours {
+  margin: 10px 0;
+  font-family: "Lovelo Black";
+}
+
+.footer__social-media {
+  margin-top: 30px;
+}
+.footer__social-media .footer__social-media-icon {
+  max-width: 40px;
+}
+
+.footer__copyright {
+  margin-top: 30px;
+}
+.footer__copyright a {
+  text-decoration: none;
+}
+.footer__copyright p {
+  margin-bottom: 0;
+  font-family: "Lovelo Black";
+  font-size: 14px;
+  font-weight: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

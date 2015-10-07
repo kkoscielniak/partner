@@ -14,7 +14,15 @@ h2 {
     text-transform: uppercase;
 }
 
+h3 {
+    font-family: $levato-black;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
 a {
+    color: $base-font-color;
     font-family: $levato-black;
     font-size: 14px;
     letter-spacing: 0.15em;

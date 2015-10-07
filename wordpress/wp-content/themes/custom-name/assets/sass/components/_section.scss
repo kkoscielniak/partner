@@ -30,6 +30,15 @@ section {
     }
 }
 
+.section--text-small {
+    text-align: center;
+
+    .section--text-small__paragraph {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
 .section--image {
     padding: 0;
 }

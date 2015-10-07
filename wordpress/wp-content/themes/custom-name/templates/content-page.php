@@ -25,3 +25,8 @@
     <p>Wspieramy dorosłych w odkrywaniu siebie oraz czerpaniu satysfakcji i przyjemności z życia. Pomagamy zmagać się z trudnościami oraz rozwijać troskliwą, opartą na miłości i wzajemnym szacunku relację z innymi. </p>
     <!-- <a href="#">Czytaj więcej</a> -->
 </section>
+
+<section class="section--text section--text-small">
+    <h3>Człowiek, który czuje się przynależny ma poczucie, że pasuje do innych ludzi , że jest ważny i kochany. </h3>
+    <p class="section--text-small__paragraph">Jest wówczas spokojniejszy i czuje się wartościowy. Wtedy też jest radośniejszy, szczęśliwszy i zdrowszy oraz osiąga lepsze wyniki w nauce i w pracy.</p>
+</section>
