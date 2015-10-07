@@ -1,7 +1,12 @@
 <section class="section__page-title">
-    <h1 class="section__page-title-text">
-        Pomagamy nauczyć Ciebie troszczenia się o siebie!
-    </h1>
+    <div class="grid">
+        <div class="grid__item palm-hide one-whole desk--one-twelfth"></div><!--
+        --><div class="grid__item one-whole desk--five-sixths">
+            <h1 class="section__page-title-text">
+                Pomagamy nauczyć Ciebie troszczenia się o siebie!
+            </h1>
+        </div>
+    </div>
 </section>
 
 <section class="section--text">

@@ -10,3 +10,22 @@ $white: #FFFFFF;
 // -------------------------
 $levato-black: 'Lovelo Black';
 $lato: 'Lato';
+
+
+
+// Grid configuration
+// --------------------------
+$desktop: 996px;
+
+$breakpoints: (
+    'palm' '(max-width: #{$desktop} -1)',
+    // 'lap' '(min-width: #{$tablet-portrait + 0.0625}) and (max-width: #{$desktop - 0.0625})',
+    // 'tablet' '(max-width: #{$tablet})',
+    // 'tablet-landscape' '(max-width: #{$tablet-landscape})',
+    // 'portable' '(min-width: #{$desktop - 0.0625}) and (max-width: #{$desktop - 0.0625})',
+    'desk' '(min-width: #{$desktop})'
+);
+
+$breakpoint-has-widths: ('palm', 'desk');
+$breakpoint-has-push:   ('palm', 'desk');
+$breakpoint-has-pull:   ('palm', 'desk');

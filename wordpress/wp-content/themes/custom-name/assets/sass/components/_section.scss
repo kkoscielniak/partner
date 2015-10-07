@@ -1,5 +1,9 @@
 section {
     padding: 0 20px;
+
+    @include min-screen($desktop) {
+        padding: 0 10%;
+    }
 }
 
 .section__page-title {
@@ -18,6 +22,13 @@ section {
     text-align: center;
     text-transform: uppercase;
 
+    @include min-screen($desktop) {
+        @include disable-vertical-align();
+
+        font-size: 60px;
+        line-height: 60px;
+        text-align: left;
+    }
 }
 
 .section--text {

@@ -5,3 +5,8 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
+@mixin disable-vertical-align() {
+    top: 0;
+    transform: none;
+}
