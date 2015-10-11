@@ -59,7 +59,11 @@
         </div>
 </section>
 
-<section class="section--text section--text-small">
-    <h3>Człowiek, który czuje się przynależny ma poczucie, że pasuje do innych ludzi , że jest ważny i kochany. </h3>
-    <p class="section--text-small__paragraph">Jest wówczas spokojniejszy i czuje się wartościowy. Wtedy też jest radośniejszy, szczęśliwszy i zdrowszy oraz osiąga lepsze wyniki w nauce i w pracy.</p>
+<section class="section--text section--text-small home__peace">
+    <div class="grid">
+        <div class="grid__item one-whole desk--one-half">
+            <h3>Człowiek, który czuje się przynależny ma poczucie, że pasuje do innych ludzi , że jest ważny i kochany. </h3>
+            <p class="section--text-small__paragraph">Jest wówczas spokojniejszy i czuje się wartościowy. Wtedy też jest radośniejszy, szczęśliwszy i zdrowszy oraz osiąga lepsze wyniki w nauce i w pracy.</p>
+        </div>
+    </div>
 </section>

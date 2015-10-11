@@ -40,4 +40,32 @@
             background-image: url('../img/horizon--desktop.png');
         }
     }
+
+    .home__peace {
+        padding-top: 60px;
+        padding-bottom: 45px;
+        position: relative;
+
+        h3 {
+            @include min-screen($desktop) {
+                &:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 50%;
+                    margin-top: 30px;
+                    margin-left: -72.5px;
+                    width: 145px;
+                    height: 10px;
+                    background-color: $base-font-color;
+                }
+            }
+        }
+
+        p {
+            @include min-screen($desktop) {
+                padding-top: 50px;
+            }
+        }
+    }
 }

@@ -62,6 +62,11 @@ section {
     .section--text-small__paragraph {
         font-size: 16px;
         line-height: 22px;
+
+        @include min-screen($desktop) {
+            font-size: 18px;
+            line-height: 24px;
+        }
     }
 }
 
