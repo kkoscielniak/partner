@@ -11,6 +11,30 @@ section {
     height: 333px;
     background-image: url('../img/page-title--mobile.png');
     background-size: cover;
+
+    @include min-screen($desktop) {
+        padding-top: 80px;
+
+        background: none;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 90%;
+            height: 150%;
+            background-image: url('../img/page-title--desktop.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 100% 0;
+            z-index: -1;
+        }
+
+        // background-image: url('../img/page-title--desktop.png');
+        // background-size: 54%;
+        // background-repeat: no-repeat;
+        // background-position: 100% 0
+    }
 }
 
 .section__page-title-text {

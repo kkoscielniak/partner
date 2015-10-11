@@ -1124,6 +1124,25 @@ section {
   -webkit-background-size: cover;
           background-size: cover;
 }
+@media only screen and (min-width: 996px) {
+  .section__page-title {
+    padding-top: 80px;
+    background: none;
+  }
+  .section__page-title:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 150%;
+    background-image: url("../img/page-title--desktop.png");
+    -webkit-background-size: contain;
+            background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    z-index: -1;
+  }
+}
 
 .section__page-title-text {
   position: relative;
