@@ -69,7 +69,7 @@ section {
     padding: 0;
 
     @include min-screen($desktop) {
-        margin-top: 85px;
+        margin: 85px 0;
         padding: 0 10%;
     }
 }
@@ -79,4 +79,8 @@ section {
     background-size: cover;
     margin: 0;
     padding: 60px 20px;
+
+    @include min-screen($desktop) {
+        padding: 60px 10%;
+    }
 }

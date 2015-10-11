@@ -786,7 +786,7 @@ th {
 /**
  * Our responsive classes, if we have enabled them.
  */
-@media only screen and (max-width: 996px -1) {
+@media only screen and (max-width: 995px) {
   /**
    * Whole
    */
@@ -1170,7 +1170,7 @@ th {
 /**
  * Pull classes, to move grid items back to the left by certain amounts.
  */
-@media only screen and (max-width: 996px -1) {
+@media only screen and (max-width: 995px) {
   .palm-hide {
     display: none;
   }
@@ -1356,7 +1356,7 @@ section {
 }
 @media only screen and (min-width: 996px) {
   .section--image {
-    margin-top: 85px;
+    margin: 85px 0;
     padding: 0 10%;
   }
 }
@@ -1366,6 +1366,11 @@ section {
           background-size: cover;
   margin: 0;
   padding: 60px 20px;
+}
+@media only screen and (min-width: 996px) {
+  .section--bg {
+    padding: 60px 10%;
+  }
 }
 
 footer {
@@ -1422,22 +1427,37 @@ footer {
 .home .home__title {
   max-width: 850px;
 }
-.home .home__background-container {
-  top: 0;
-  width: 100%;
-  height: auto;
-  padding-bottom: 60px;
-  background-image: url("../img/page-title--desktop.png");
-  -webkit-background-size: 55% auto;
-          background-size: 55% auto;
-  background-repeat: no-repeat;
-  background-position: 100% 0;
+@media only screen and (min-width: 996px) {
+  .home .home__background-container {
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px;
+    background-image: url("../img/page-title--desktop.png");
+    -webkit-background-size: 55% auto;
+            background-size: 55% auto;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+  }
 }
-.home .home__parents {
-  margin-top: 180px;
+@media only screen and (min-width: 996px) {
+  .home .home__parents {
+    margin-top: 180px;
+  }
 }
 .home .home__kids .section--text {
   margin-top: 50px;
+}
+.home .home__kids img {
+  width: 100%;
+}
+.home .home__adults {
+  background-image: url("../img/horizon.png");
+}
+@media only screen and (min-width: 996px) {
+  .home .home__adults {
+    background-image: url("../img/horizon--desktop.png");
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

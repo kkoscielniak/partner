@@ -43,24 +43,20 @@
     </div>
 </section>
 
-
-
-
-
-
-
-
-
 <section class="section--text desk-hide wide-desk-hide">
     <h2>Dzieci<br/>i młodzież</h2>
     <p>Pomagamy rozpoznawać źródła trudności oraz potrzeby dzieci i młodzieży, kształtujemy nastawienie na rozwój i pozytywną zmianę. Rozpoznajemy trudności szkolne (np. dysleksję) oraz badamy dojrzałość szkolną. Wystawiamy opinie uznawane przez szkoły.</p>
     <!-- <a href="#">Czytaj więcej</a> -->
 </section>
 
-<section class="section--text section--bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/horizon.png');">
-    <h2>Dorośli</h2>
-    <p>Wspieramy dorosłych w odkrywaniu siebie oraz czerpaniu satysfakcji i przyjemności z życia. Pomagamy zmagać się z trudnościami oraz rozwijać troskliwą, opartą na miłości i wzajemnym szacunku relację z innymi. </p>
-    <!-- <a href="#">Czytaj więcej</a> -->
+<section class="section--text section--bg home__adults">
+    <div class="grid">
+        <div class="grid__item palm-hide desk--two-twelfths"></div><!--
+        --><div class="grid__item one-whole desk--four-twelfths">
+            <h2>Dorośli</h2>
+            <p>Wspieramy dorosłych w odkrywaniu siebie oraz czerpaniu satysfakcji i przyjemności z życia. Pomagamy zmagać się z trudnościami oraz rozwijać troskliwą, opartą na miłości i wzajemnym szacunku relację z innymi. </p>
+            <!-- <a href="#">Czytaj więcej</a> -->
+        </div>
 </section>
 
 <section class="section--text section--text-small">
