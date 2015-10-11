@@ -10,3 +10,17 @@
     top: 0;
     transform: none;
 }
+
+@each $breakpoint in $breakpoints{
+    $name: nth($breakpoint, 1);
+    @include grid-media-query( $name ) {
+        // It allows to hide grid elements if they aren't necessary in given viewport
+        // usage: add class palm-hide, lap-hide...
+        .#{$name}-hide { display: none; }
+        // this property allows to hide something from the user POV, but it stays in place
+        // example: we need to get properties such as height, width from an element,
+        // but it has to remain hidden
+        .#{$name}-opaque { opacity: 0; }
+        .#{$name}-show { display: inline-block; opacity: 1; }
+    }
+}

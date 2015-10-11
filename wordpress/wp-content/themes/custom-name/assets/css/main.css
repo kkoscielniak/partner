@@ -1034,6 +1034,130 @@ th {
     width: 91.666%;
   }
 }
+@media only screen and (min-width: 1440px) {
+  /**
+   * Whole
+   */
+  .wide-desk--one-whole {
+    width: 100%;
+  }
+
+  /**
+   * Halves
+   */
+  .wide-desk--one-half, .wide-desk--two-quarters, .wide-desk--three-sixths, .wide-desk--four-eighths, .wide-desk--five-tenths, .wide-desk--six-twelfths {
+    width: 50%;
+  }
+
+  /**
+   * Thirds
+   */
+  .wide-desk--one-third, .wide-desk--two-sixths, .wide-desk--four-twelfths {
+    width: 33.333%;
+  }
+
+  .wide-desk--two-thirds, .wide-desk--four-sixths, .wide-desk--eight-twelfths {
+    width: 66.666%;
+  }
+
+  /**
+   * Quarters
+   */
+  .wide-desk--one-quarter, .wide-desk--two-eighths, .wide-desk--three-twelfths {
+    width: 25%;
+  }
+
+  .wide-desk--three-quarters, .wide-desk--six-eighths, .wide-desk--nine-twelfths {
+    width: 75%;
+  }
+
+  /**
+   * Fifths
+   */
+  .wide-desk--one-fifth, .wide-desk--two-tenths {
+    width: 20%;
+  }
+
+  .wide-desk--two-fifths, .wide-desk--four-tenths {
+    width: 40%;
+  }
+
+  .wide-desk--three-fifths, .wide-desk--six-tenths {
+    width: 60%;
+  }
+
+  .wide-desk--four-fifths, .wide-desk--eight-tenths {
+    width: 80%;
+  }
+
+  /**
+   * Sixths
+   */
+  .wide-desk--one-sixth, .wide-desk--two-twelfths {
+    width: 16.666%;
+  }
+
+  .wide-desk--five-sixths, .wide-desk--ten-twelfths {
+    width: 83.333%;
+  }
+
+  /**
+   * Eighths
+   */
+  .wide-desk--one-eighth {
+    width: 12.5%;
+  }
+
+  .wide-desk--three-eighths {
+    width: 37.5%;
+  }
+
+  .wide-desk--five-eighths {
+    width: 62.5%;
+  }
+
+  .wide-desk--seven-eighths {
+    width: 87.5%;
+  }
+
+  /**
+   * Tenths
+   */
+  .wide-desk--one-tenth {
+    width: 10%;
+  }
+
+  .wide-desk--three-tenths {
+    width: 30%;
+  }
+
+  .wide-desk--seven-tenths {
+    width: 70%;
+  }
+
+  .wide-desk--nine-tenths {
+    width: 90%;
+  }
+
+  /**
+   * Twelfths
+   */
+  .wide-desk--one-twelfth {
+    width: 8.333%;
+  }
+
+  .wide-desk--five-twelfths {
+    width: 41.666%;
+  }
+
+  .wide-desk--seven-twelfths {
+    width: 58.333%;
+  }
+
+  .wide-desk--eleven-twelfths {
+    width: 91.666%;
+  }
+}
 /*------------------------------------*\
     $PUSH
 \*------------------------------------*/
@@ -1046,6 +1170,48 @@ th {
 /**
  * Pull classes, to move grid items back to the left by certain amounts.
  */
+@media only screen and (max-width: 996px -1) {
+  .palm-hide {
+    display: none;
+  }
+
+  .palm-opaque {
+    opacity: 0;
+  }
+
+  .palm-show {
+    display: inline-block;
+    opacity: 1;
+  }
+}
+@media only screen and (min-width: 996px) {
+  .desk-hide {
+    display: none;
+  }
+
+  .desk-opaque {
+    opacity: 0;
+  }
+
+  .desk-show {
+    display: inline-block;
+    opacity: 1;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .wide-desk-hide {
+    display: none;
+  }
+
+  .wide-desk-opaque {
+    opacity: 0;
+  }
+
+  .wide-desk-show {
+    display: inline-block;
+    opacity: 1;
+  }
+}
 body {
   background-color: #ffefdd;
   color: #53524f;
@@ -1130,19 +1296,6 @@ section {
     height: auto;
     background: none;
   }
-  .section__page-title:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 90%;
-    height: 150%;
-    background-image: url("../img/page-title--desktop.png");
-    -webkit-background-size: contain;
-            background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 100% 0;
-    z-index: -1;
-  }
 }
 
 .section__page-title-text {
@@ -1200,6 +1353,12 @@ section {
 
 .section--image {
   padding: 0;
+}
+@media only screen and (min-width: 996px) {
+  .section--image {
+    margin-top: 85px;
+    padding: 0 10%;
+  }
 }
 
 .section--bg {
@@ -1276,6 +1435,9 @@ footer {
 }
 .home .home__parents {
   margin-top: 180px;
+}
+.home .home__kids .section--text {
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

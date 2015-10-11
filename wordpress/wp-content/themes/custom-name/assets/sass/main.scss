@@ -1,6 +1,4 @@
 @import "variables";
-@import "mixins";
-
 
 // Vendor
 @import "../vendors/normalize-scss/_normalize.scss";			// browser default css reset
@@ -8,6 +6,8 @@
 @import "../vendors/sass-mediaqueries/media-queries"; 	// media queries
 
 // Copyright: Krystian Kościelniak
+@import "mixins";
+
 @import "global";
 @import "fonts";
 @import "components/header";

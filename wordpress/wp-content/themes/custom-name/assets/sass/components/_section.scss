@@ -17,19 +17,6 @@ section {
         height: auto;
 
         background: none;
-
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            width: 90%;
-            height: 150%;
-            background-image: url('../img/page-title--desktop.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: 100% 0;
-            z-index: -1;
-        }
     }
 }
 
@@ -80,6 +67,11 @@ section {
 
 .section--image {
     padding: 0;
+
+    @include min-screen($desktop) {
+        margin-top: 85px;
+        padding: 0 10%;
+    }
 }
 
 // background-image property is set up by inline-style

@@ -22,13 +22,36 @@
     </section>
 </div>
 
+<section class="section--image home__kids">
+    <div class="grid">
+        <div class="grid__item palm-hide desk--one-twelfth"></div><!--
+        --><div class="grid__item one-whole desk--five-twelfths">
+            <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/girl-photo--desktop.png" media="(min-width: 996px)">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/girl-photo--mobile.png">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/girl-photo--mobile.png">
+            </picture>
+        </div><!--
+        --><div class="grid__item palm-hide desk--one-twelfth"></div><!--
 
-
-<section class="section--image">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/girl-photo--mobile.png">
+        --><div class="grid__item palm-hide desk--five-twelfths wide-desk--four-twelfths">
+            <div class="section--text">
+                <h2>Dzieci<br/>i młodzież</h2>
+                <p>Pomagamy rozpoznawać źródła trudności oraz potrzeby dzieci i młodzieży, kształtujemy nastawienie na rozwój i pozytywną zmianę. Rozpoznajemy trudności szkolne (np. dysleksję) oraz badamy dojrzałość szkolną. Wystawiamy opinie uznawane przez szkoły.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section class="section--text">
+
+
+
+
+
+
+
+
+<section class="section--text desk-hide wide-desk-hide">
     <h2>Dzieci<br/>i młodzież</h2>
     <p>Pomagamy rozpoznawać źródła trudności oraz potrzeby dzieci i młodzieży, kształtujemy nastawienie na rozwój i pozytywną zmianę. Rozpoznajemy trudności szkolne (np. dysleksję) oraz badamy dojrzałość szkolną. Wystawiamy opinie uznawane przez szkoły.</p>
     <!-- <a href="#">Czytaj więcej</a> -->

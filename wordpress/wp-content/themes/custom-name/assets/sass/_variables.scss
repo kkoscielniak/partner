@@ -16,6 +16,7 @@ $lato: 'Lato';
 // Grid configuration
 // --------------------------
 $desktop: 996px;
+$wide-desktop: 1440px;
 
 $breakpoints: (
     'palm' '(max-width: #{$desktop} -1)',
@@ -23,9 +24,10 @@ $breakpoints: (
     // 'tablet' '(max-width: #{$tablet})',
     // 'tablet-landscape' '(max-width: #{$tablet-landscape})',
     // 'portable' '(min-width: #{$desktop - 0.0625}) and (max-width: #{$desktop - 0.0625})',
-    'desk' '(min-width: #{$desktop})'
+    'desk' '(min-width: #{$desktop})',
+    'wide-desk' '(min-width: #{$wide-desktop})'
 );
 
-$breakpoint-has-widths: ('palm', 'desk');
-$breakpoint-has-push:   ('palm', 'desk');
-$breakpoint-has-pull:   ('palm', 'desk');
+$breakpoint-has-widths: ('palm', 'desk', 'wide-desk');
+$breakpoint-has-push:   ('palm', 'desk', 'wide-desk');
+$breakpoint-has-pull:   ('palm', 'desk', 'wide-desk');
