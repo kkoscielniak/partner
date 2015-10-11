@@ -1383,14 +1383,40 @@ footer {
   padding: 60px 20px 20px;
   background-color: #FFFFFF;
 }
+@media only screen and (min-width: 996px) {
+  footer {
+    padding: 55px 10% 45px;
+  }
+}
+
+@media only screen and (min-width: 996px) {
+  .footer__info {
+    margin-top: 45px;
+  }
+  .footer__info h2 {
+    margin-top: 50px;
+  }
+}
 
 .footer__title {
   line-height: 40px;
+}
+@media only screen and (min-width: 996px) {
+  .footer__title {
+    font-size: 50px;
+    line-height: 1em;
+    text-align: center;
+  }
 }
 
 .footer__image-container {
   text-align: center;
   margin: 40px 0;
+}
+@media only screen and (min-width: 996px) {
+  .footer__image-container {
+    margin: 0;
+  }
 }
 
 .footer__image {
@@ -1413,12 +1439,28 @@ footer {
 .footer__social-media {
   margin-top: 30px;
 }
+@media only screen and (min-width: 996px) {
+  .footer__social-media {
+    display: inline-block;
+  }
+}
 .footer__social-media .footer__social-media-icon {
   max-width: 40px;
 }
 
+@media only screen and (min-width: 996px) {
+  .footer__bottom {
+    margin-top: 70px;
+  }
+}
+
 .footer__copyright {
   margin-top: 30px;
+}
+@media only screen and (min-width: 996px) {
+  .footer__copyright {
+    display: inline-block;
+  }
 }
 .footer__copyright a {
   text-decoration: none;
@@ -1428,6 +1470,12 @@ footer {
   font-family: "Lovelo Black";
   font-size: 14px;
   font-weight: 20px;
+}
+@media only screen and (min-width: 996px) {
+  .footer__copyright p {
+    display: inline-block;
+    margin-left: 60px;
+  }
 }
 
 .home .home__title {

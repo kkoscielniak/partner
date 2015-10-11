@@ -1,16 +1,39 @@
 footer {
     padding: 60px 20px 20px;
-
     background-color: $white;
+
+    @include min-screen($desktop) {
+        padding: 55px 10% 45px;
+    }
+}
+
+.footer__info {
+    @include min-screen($desktop) {
+        margin-top: 45px;
+
+        h2 {
+            margin-top: 50px;
+        }
+    }
 }
 
 .footer__title {
     line-height: 40px;
+
+    @include min-screen($desktop) {
+        font-size: 50px;
+        line-height: 1em;
+        text-align: center;
+    }
 }
 
 .footer__image-container {
     text-align: center;
     margin: 40px 0;
+
+    @include min-screen($desktop) {
+        margin: 0;
+    }
 }
 
 .footer__image {
@@ -35,13 +58,27 @@ footer {
 .footer__social-media {
     margin-top: 30px;
 
+    @include min-screen($desktop) {
+        display: inline-block;
+    }
+
     .footer__social-media-icon {
         max-width: 40px;
     }
 }
 
+.footer__bottom {
+    @include min-screen($desktop) {
+        margin-top: 70px;
+    }
+}
+
 .footer__copyright {
     margin-top: 30px;
+
+    @include min-screen($desktop) {
+        display: inline-block;
+    }
 
     a {
         text-decoration: none;
@@ -52,6 +89,11 @@ footer {
         font-family: $levato-black;
         font-size: 14px;
         font-weight: 20px;
+
+        @include min-screen($desktop) {
+            display: inline-block;
+            margin-left: 60px;
+        }
     }
 
 }
