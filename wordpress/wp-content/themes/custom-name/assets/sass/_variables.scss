@@ -19,11 +19,7 @@ $desktop: 996px;
 $wide-desktop: 1440px;
 
 $breakpoints: (
-    'palm' '(max-width: #{$desktop} -1)',
-    // 'lap' '(min-width: #{$tablet-portrait + 0.0625}) and (max-width: #{$desktop - 0.0625})',
-    // 'tablet' '(max-width: #{$tablet})',
-    // 'tablet-landscape' '(max-width: #{$tablet-landscape})',
-    // 'portable' '(min-width: #{$desktop - 0.0625}) and (max-width: #{$desktop - 0.0625})',
+    'palm' '(max-width: #{$desktop - 1})',
     'desk' '(min-width: #{$desktop})',
     'wide-desk' '(min-width: #{$wide-desktop})'
 );
