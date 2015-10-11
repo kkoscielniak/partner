@@ -1,0 +1,21 @@
+.home {
+
+    .home__title {
+        max-width: 850px;
+    }
+
+    .home__background-container {
+        top: 0;
+        width: 100%;
+        height: auto;
+        padding-bottom: 60px;
+        background-image: url("../img/page-title--desktop.png");
+        background-size: 55% auto;
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+    }
+
+    .home__parents {
+        margin-top: 180px;
+    }
+}

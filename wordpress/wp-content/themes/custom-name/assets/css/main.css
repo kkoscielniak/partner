@@ -1127,6 +1127,7 @@ section {
 @media only screen and (min-width: 996px) {
   .section__page-title {
     padding-top: 80px;
+    height: auto;
     background: none;
   }
   .section__page-title:before {
@@ -1173,10 +1174,20 @@ section {
 .section--text {
   margin: 60px auto;
 }
+@media only screen and (min-width: 996px) {
+  .section--text {
+    margin: 0 auto;
+  }
+}
 .section--text p {
   font-family: "Lato";
   font-size: 14px;
   line-height: 25px;
+}
+@media only screen and (min-width: 996px) {
+  .section--text p {
+    font-size: 18px;
+  }
 }
 
 .section--text-small {
@@ -1247,6 +1258,24 @@ footer {
   font-family: "Lovelo Black";
   font-size: 14px;
   font-weight: 20px;
+}
+
+.home .home__title {
+  max-width: 850px;
+}
+.home .home__background-container {
+  top: 0;
+  width: 100%;
+  height: auto;
+  padding-bottom: 60px;
+  background-image: url("../img/page-title--desktop.png");
+  -webkit-background-size: 55% auto;
+          background-size: 55% auto;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+.home .home__parents {
+  margin-top: 180px;
 }
 
 /*# sourceMappingURL=main.css.map */

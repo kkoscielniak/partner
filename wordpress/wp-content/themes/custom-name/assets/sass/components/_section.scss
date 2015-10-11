@@ -14,6 +14,7 @@ section {
 
     @include min-screen($desktop) {
         padding-top: 80px;
+        height: auto;
 
         background: none;
 
@@ -29,11 +30,6 @@ section {
             background-position: 100% 0;
             z-index: -1;
         }
-
-        // background-image: url('../img/page-title--desktop.png');
-        // background-size: 54%;
-        // background-repeat: no-repeat;
-        // background-position: 100% 0
     }
 }
 
@@ -58,10 +54,18 @@ section {
 .section--text {
     margin: 60px auto;
 
+    @include min-screen($desktop) {
+        margin: 0 auto;
+    }
+
     p {
         font-family: $lato;
         font-size: 14px;
         line-height: 25px;
+
+        @include min-screen($desktop) {
+            font-size: 18px;
+        }
     }
 }
 

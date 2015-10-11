@@ -1,19 +1,28 @@
-<section class="section__page-title">
-    <div class="grid">
-        <div class="grid__item palm-hide one-whole desk--one-twelfth"></div><!--
-        --><div class="grid__item one-whole desk--five-sixths">
-            <h1 class="section__page-title-text">
-                Pomagamy nauczyć Ciebie troszczenia się o siebie!
-            </h1>
+<div class="home__background-container">
+    <section class="section__page-title">
+        <div class="grid">
+            <div class="grid__item palm-hide one-whole desk--one-twelfth"></div><!--
+            --><div class="grid__item one-whole desk--five-sixths">
+                <h1 class="section__page-title-text home__title">
+                    Pomagamy nauczyć Ciebie troszczenia się o siebie!
+                </h1>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="section--text">
-    <h2>Rodzice</h2>
-    <p>Pomagamy rozwiązywać problemy wychowawcze i skutecznie radzić sobie z trudnymi sytuacjami. Wspieramy w tym jak być dobrym i skutecznym rodzicem, i jak stwarzać dziecku i nastolatkowi warunki do pełnego, wartościowego rozwoju.</p>
-    <!-- <a href="#">Czytaj więcej</a> -->
-</section>
+    <section class="section--text home__parents">
+        <div class="grid">
+            <div class="grid__item palm-hide desk--one-twelfth"></div><!--
+            --><div class="grid__item desk--four-twelfths">
+                <h2>Rodzice</h2>
+                <p>Pomagamy rozwiązywać problemy wychowawcze i skutecznie radzić sobie z trudnymi sytuacjami. Wspieramy w tym jak być dobrym i skutecznym rodzicem, i jak stwarzać dziecku i nastolatkowi warunki do pełnego, wartościowego rozwoju.</p>
+                <!-- <a href="#">Czytaj więcej</a> -->
+            </div>
+        </div>
+    </section>
+</div>
+
+
 
 <section class="section--image">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/girl-photo--mobile.png">
