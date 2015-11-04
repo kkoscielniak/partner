@@ -7,8 +7,7 @@
  *
  * Enqueue scripts in the following order:
  * 1. jquery-1.11.1.min.js via Google CDN
- * 2. /theme/assets/js/vendor/modernizr.min.js
- * 3. /theme/assets/js/scripts.js (in footer)
+ * 2. /theme/assets/js/scripts.js (in footer)
  *
  * Google Analytics is loaded after enqueued scripts if:
  * - An ID has been defined in config.php
@@ -23,7 +22,6 @@ function roots_scripts() {
     $assets = array(
       'css'       => '/assets/css/main.css',
       'js'        => '/assets/js/scripts.js',
-      'modernizr' => '/assets/vendors/modernizr/modernizr.js',
       'vendor'    => '/assets/js/vendor.js'
     );
   } else {
@@ -32,7 +30,6 @@ function roots_scripts() {
     $assets     = array(
       'css'       => '/assets/css/main.min.css?' . $assets['assets/css/main.min.css']['hash'],
       'js'        => '/assets/js/scripts.min.js?' . $assets['assets/js/scripts.min.js']['hash'],
-      'modernizr' => '/assets/js/vendors/modernizr.min.js',
       'vendor'    => '/assets/js/vendor.min.js' . $assets['assets/js/vendor.min.js']['hash']
     );
   }
@@ -49,7 +46,6 @@ function roots_scripts() {
     wp_enqueue_script('comment-reply');
   }
 
-  wp_enqueue_script('modernizr', get_template_directory_uri() . $assets['modernizr'], array(), null, false);
   wp_enqueue_script('vendor', get_template_directory_uri() . $assets['vendor'], array(), null, true);
   wp_enqueue_script('roots_js', get_template_directory_uri() . $assets['js'], array(), null, true);
 }

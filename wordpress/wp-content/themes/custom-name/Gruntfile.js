@@ -92,20 +92,6 @@ module.exports = function(grunt) {
         src: 'assets/css/main.min.css'
       }
     },
-    modernizr: {
-      build: {
-        devFile: 'assets/vendors/modernizr/modernizr.js',
-        outputFile: 'assets/js/vendors/modernizr.min.js',
-        files: {
-          'src': [
-            ['assets/js/scripts.min.js'],
-            ['assets/css/main.min.css']
-          ]
-        },
-        uglify: true,
-        parseFiles: true
-      }
-    },
     version: {
       default: {
         options: {
