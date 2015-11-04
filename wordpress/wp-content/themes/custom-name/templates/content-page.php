@@ -4,7 +4,7 @@
             <div class="grid__item palm-hide one-whole desk--one-twelfth"></div><!--
             --><div class="grid__item one-whole desk--five-sixths">
                 <h1 class="section__page-title-text home__title">
-                    Pomagamy nauczyć Ciebie troszczenia się o siebie!
+                    <?php the_field('main_header'); ?>
                 </h1>
             </div>
         </div>
