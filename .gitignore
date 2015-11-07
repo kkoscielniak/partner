@@ -43,3 +43,6 @@ wordpress/wp-content/themes/custom-name/assets/css/main.min.css
 wordpress/wp-content/themes/custom-name/assets/css/main.min.css.map
 wordpress/wp-content/themes/custom-name/assets/js/scripts.min.js
 wordpress/wp-content/themes/custom-name/assets/js/vendor.min.js
+
+# WP uploads
+wordpress/wp-content/uploads/

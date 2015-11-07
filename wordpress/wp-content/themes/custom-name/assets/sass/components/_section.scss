@@ -6,6 +6,18 @@ section {
     }
 }
 
+.section-title {
+    font-family: $levato-black;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include min-screen($desktop) {
+        padding: 50px 0;
+    }
+}
+
 .section__page-title {
     position: relative;
     height: 333px;
