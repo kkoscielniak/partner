@@ -33,9 +33,13 @@ build/Release
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 
-# bower components 
+# bower components
 /wordpress/wp-content/themes/custom-name/assets/vendors
 
 .sass-cache
 
-assets/css/
+# minified assets
+wordpress/wp-content/themes/custom-name/assets/css/main.min.css
+wordpress/wp-content/themes/custom-name/assets/css/main.min.css.map
+wordpress/wp-content/themes/custom-name/assets/js/scripts.min.js
+wordpress/wp-content/themes/custom-name/assets/js/vendor.min.js
