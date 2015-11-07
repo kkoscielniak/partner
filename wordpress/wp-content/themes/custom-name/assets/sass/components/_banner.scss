@@ -1,6 +1,7 @@
 .banner {
     background-size: cover;
     text-align: center;
+    height: 155px;
 
     @include min-screen($desktop) {
         height: 310px;
@@ -9,9 +10,13 @@
     .banner__header {
         @include vertical-align();
         color: $white;
-        font-size: 70px;
         font-family: $levato-black;
+        font-size: 30px;
         text-transform: uppercase;
+
+        @include min-screen($desktop) {
+            font-size: 70px;
+        }
     }
 }
 

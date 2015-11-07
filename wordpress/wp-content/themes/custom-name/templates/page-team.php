@@ -15,9 +15,11 @@
                         the_row();
                         $img = get_sub_field('photo');
                         ?><!--
-                        --><div class="grid__item desk--one-fifth">
+                        --><div class="grid__item one-half desk--one-fifth">
 
-                            <img class="team__photo" src="<?php echo $img['url']; ?>">
+                            <img class="team__photo" 
+                                src="<?php echo $img['url']; ?>"
+                                alt="<?php echo $img['alt']; ?>">
                             <p class="team__name"><?php the_sub_field('name'); ?></p>
                         </div><!--
                         --><?php
