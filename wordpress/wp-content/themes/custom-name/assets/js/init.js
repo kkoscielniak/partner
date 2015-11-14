@@ -1,5 +1,5 @@
-window.FEW = window.FEW || {};
-window.FEW._submodules = window.FEW._submodules || {};
+window.Partner = window.Partner || {};
+window.Partner._submodules = window.Partner._submodules || {};
 
 (function($) {
 
@@ -9,13 +9,13 @@ window.FEW._submodules = window.FEW._submodules || {};
 
         var getSubmodule = function(name) {
             return function() {
-                window.FEW._submodules[name]($);
+                window.Partner._submodules[name]($);
             };
         };
 
         $.each(['common'].concat(bodyClasses), function(i, module) {
-            if ($.isFunction(window.FEW[module])) {
-                window.FEW[module]($);
+            if ($.isFunction(window.Partner[module])) {
+                window.Partner[module]($);
             }
         });
     });

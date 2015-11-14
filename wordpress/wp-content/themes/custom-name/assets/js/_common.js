@@ -1,8 +1,10 @@
-window.FEW = window.FEW || {};
+window.Partner = window.Partner || {};
 
-window.FEW.common = function($) {
+window.Partner.common = function($) {
     var $window = $(window);
     var $body = $('body');
+
+    console.log('aa');
 
     var handleViewportChange = function() {
     };

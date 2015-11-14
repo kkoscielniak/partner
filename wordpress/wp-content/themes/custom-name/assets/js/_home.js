@@ -1,6 +1,6 @@
-window.FEW = window.FEW || {};
+window.Partner = window.Partner || {};
 
-window.FEW.home = function($) {
+window.Partner.home = function($) {
     var $window = $(window);
     var $body = $('body');
 
