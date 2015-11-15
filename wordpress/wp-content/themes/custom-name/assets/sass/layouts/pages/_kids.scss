@@ -1,0 +1,49 @@
+.kids__readiness {
+
+    @include min-screen($desktop) {
+        height: 433px;
+    }
+
+    .readiness__content {
+        @include vertical-align();
+
+        @include min-screen($desktop) {
+            max-width: 610px;
+            padding-left: 16%;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 24px;
+
+            @include min-screen($desktop) {
+                max-width: 360px;
+            }
+        }
+    }
+}
+
+.kids-dyslexia {
+    background: $bg-pink;
+    text-align: center;
+
+    .kids-dyslexia__content {
+        @include vertical-align();
+    }
+
+    @include min-screen($desktop) {
+        margin-top: 75px;
+        height: 255px;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    p {
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}

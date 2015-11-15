@@ -16,10 +16,9 @@
     <div class="content row">
       <main class="main" role="main">
         <?php include roots_template_path(); ?>
-      </main><!-- /.main --> 
-    </div><!-- /.content -->
-  </div><!-- /.wrap -->
-
+      </main><!-- /.main
+    --></div><!-- /.content
+     --></div><!-- /.wrap -->
   <?php get_template_part('templates/footer'); ?>
 
   <?php wp_footer(); ?>

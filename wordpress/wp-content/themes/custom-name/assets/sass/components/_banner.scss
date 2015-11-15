@@ -82,3 +82,32 @@
     background-image: url('../img/banner-adults-2.jpg');
     color: $base-font-color;
 }
+
+.banner--kids {
+    height: 375px;
+    background-image: url('../img/banner-kids.jpg');
+    color: $base-font-color;
+}
+
+.banner--kids-2 {
+    height: 375px;
+    background-image: url('../img/banner-kids-2.jpg');
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+    color: $base-font-color;
+}
+
+.banner--kids-3 {
+    // height: 375px;
+    background-image: url('../img/banner-kids-3.jpg');
+    background-repeat: no-repeat;
+    color: $base-font-color;
+
+    .banner__header, .banner__content {
+        color: $white;
+
+        &:after {
+            background-color: $white;
+        }
+    }
+}
