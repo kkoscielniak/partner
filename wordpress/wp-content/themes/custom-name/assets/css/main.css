@@ -1254,6 +1254,10 @@ img {
   height: auto;
 }
 
+input {
+  appearance: none;
+}
+
 @font-face {
   font-family: Lovelo Black;
   src: url("../fonts/Lovelo Black.otf");
@@ -1836,6 +1840,54 @@ body.adults {
   margin-top: 30px;
   font-size: 18px;
   line-height: 24px;
+}
+
+@media only screen and (min-width: 996px) {
+  .contact-container {
+    height: 610px;
+    background-image: url("../img/bg-contact.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+  }
+}
+.contact-container .contact__headline {
+  padding-top: 30px;
+  color: #FFFFFF;
+  font-family: "Lovelo Black";
+  text-align: center;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 996px) {
+  .contact-container .contact__headline {
+    padding-top: 45px;
+    font-size: 70px;
+  }
+}
+.contact-container .contact__column-headline {
+  color: #FFFFFF;
+  font-family: "Lovelo Black";
+  text-align: center;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 996px) {
+  .contact-container .contact__column-headline {
+    font-size: 32px;
+  }
+}
+.contact-container input[type="email"],
+.contact-container textarea {
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  background-color: transparent !important;
+  color: #FFFFFF;
+}
+.contact-container input[type="email"] {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

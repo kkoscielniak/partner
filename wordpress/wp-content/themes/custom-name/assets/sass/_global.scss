@@ -1,3 +1,5 @@
+// @import "compass/css3/appearance";
+
 body {
     background-color: $bg-color;
     color: $base-font-color;
@@ -38,4 +40,8 @@ a {
 img {
     max-width: 100%;
     height: auto;
+}
+
+input {
+    appearance: none;
 }

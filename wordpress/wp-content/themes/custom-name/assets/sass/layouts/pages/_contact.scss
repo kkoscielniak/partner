@@ -1,0 +1,50 @@
+.contact-container {
+    @include min-screen($desktop) {
+        height: 610px;
+        background-image: url('../img/bg-contact.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .contact__headline {
+        padding-top: 30px;
+
+        color: $white;
+        font-family: $levato-black;
+        text-align: center;
+        text-transform: uppercase;
+
+        @include min-screen($desktop) {
+            padding-top: 45px;
+
+            font-size: 70px;
+        }
+    }
+
+    .contact__column-headline {
+        color: $white;
+        font-family: $levato-black;
+        text-align: center;
+        text-transform: uppercase;
+
+        @include min-screen($desktop) {
+            font-size: 32px;
+        }
+    }
+
+    input[type="email"],
+    textarea {
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        border: 1px solid $white;
+
+        background-color: transparent !important;
+        color: $white;
+    }
+
+    input[type="email"] {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
