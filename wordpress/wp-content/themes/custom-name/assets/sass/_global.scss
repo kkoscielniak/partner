@@ -21,6 +21,11 @@ h3 {
     text-transform: uppercase;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     color: $base-font-color;
     font-family: $levato-black;

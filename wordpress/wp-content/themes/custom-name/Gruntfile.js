@@ -11,7 +11,8 @@ module.exports = function(grunt) {
   ];
 
   var jsVendorFileList = [
-    'assets/vendors/jquery/dist/jquery.js'
+    'assets/vendors/jquery/dist/jquery.js',
+    'assets/js/vendors/jquery.magicmove.js'
   ];
 
   grunt.initConfig({

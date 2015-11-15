@@ -1,7 +1,7 @@
 .banner {
     background-size: cover;
     text-align: center;
-    height: 155px;
+    height: 300px;
 
     @include min-screen($desktop) {
         height: 310px;
@@ -11,15 +11,74 @@
         @include vertical-align();
         color: $white;
         font-family: $levato-black;
-        font-size: 30px;
+        font-size: 50px;
         text-transform: uppercase;
 
         @include min-screen($desktop) {
             font-size: 70px;
         }
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            margin-bottom: 10px;
+            margin-left: -72.5px;
+            width: 145px;
+            height: 10px;
+            background-color: $white;
+        }
+
+        &.banner__header--secondary {
+
+            @include min-screen($desktop) {
+                font-size: 40px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+.banner--secondary__content {
+    @include vertical-align();
+    margin: 0 auto;
+
+    @include min-screen($desktop) {
+        width: 50%;
+    }
+
+    .banner__header {
+        color: $base-font-color;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            margin-top: 30px;
+            margin-left: -72.5px;
+            width: 145px;
+            height: 10px;
+            background-color: #53524f;
+        }
+    }
+
+    .banner__content {
+        padding-top: 20px;
     }
 }
 
 .banner--team {
     background-image: url('../img/banner-team.jpg');
+}
+
+.banner--adults {
+    background-image: url('../img/banner-adults.jpg');
+}
+
+.banner--adults-2 {
+    height: 375px;
+    background-image: url('../img/banner-adults-2.jpg');
+    color: $base-font-color;
 }

@@ -21,6 +21,35 @@ section {
         font-size: 30px;
         line-height: 40px;
     }
+
+    &.section-title--left {
+        text-align: left;
+
+        font-size: 30px;
+        line-height: 40px;
+
+        @include min-screen($desktop) {
+            padding-bottom: 0;
+            font-size: 40px;
+            font-weight: 600;
+        }
+    }
+}
+
+.section-tagline {
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .15em;
+
+    @include min-screen($desktop) {
+        padding: 0;
+    }
+}
+
+.section-content {
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .section__page-title {
@@ -104,5 +133,11 @@ section {
 
     @include min-screen($desktop) {
         padding: 60px 10%;
+    }
+}
+
+.content-row {
+    @include min-screen($desktop) {
+        padding-top: 55px;
     }
 }

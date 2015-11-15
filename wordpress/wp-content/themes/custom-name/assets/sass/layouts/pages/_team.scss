@@ -1,17 +1,18 @@
 .team {
 
+    .team__member {
+        padding-bottom: 40px;
+    }
+
     .team__photo {
         border-radius: 50%;
-
-        @include min-screen($desktop) {
-            max-width: 160px;
-        }
     }
 
     .team__name {
-        margin-left: auto;
+        height: 40px;
+
         margin-right: auto;
-        padding-bottom: 40px;
+        margin-left: auto;
 
         font-family: $levato-black;
         font-size: 14px;
@@ -21,5 +22,19 @@
         @include min-screen($desktop) {
             max-width: 120px;
         }
+    }
+
+    .team__link {
+        display: block;
+
+        margin-right: auto;
+        margin-left: auto;
+
+        font-family: $levato-black;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: .15em;
+        text-align: center;
+        text-transform: uppercase;
     }
 }
