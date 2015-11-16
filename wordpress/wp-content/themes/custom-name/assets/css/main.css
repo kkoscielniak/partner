@@ -1842,13 +1842,16 @@ body.adults {
   line-height: 24px;
 }
 
+.contact-container {
+  background-image: url("../img/bg-contact-mobile.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
 @media only screen and (min-width: 996px) {
   .contact-container {
     height: 610px;
     background-image: url("../img/bg-contact.jpg");
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-            background-size: cover;
   }
 }
 .contact-container .contact__headline {
@@ -1857,6 +1860,7 @@ body.adults {
   font-family: "Lovelo Black";
   text-align: center;
   text-transform: uppercase;
+  font-size: 50px;
 }
 @media only screen and (min-width: 996px) {
   .contact-container .contact__headline {
@@ -1870,14 +1874,20 @@ body.adults {
   }
 }
 .contact-container .contact__column-headline {
+  padding-top: 30px;
   color: #FFFFFF;
   font-family: "Lovelo Black";
+  font-size: 30px;
   text-transform: uppercase;
 }
 @media only screen and (min-width: 996px) {
   .contact-container .contact__column-headline {
+    padding: 0;
     font-size: 32px;
   }
+}
+.contact-container .contact__column-headline.contact__column-headline--center {
+  text-align: center;
 }
 .contact-container .contact__address, .contact-container .contact__office-hours {
   color: #FFFFFF;
