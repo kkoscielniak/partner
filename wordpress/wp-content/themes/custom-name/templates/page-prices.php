@@ -16,30 +16,28 @@
         <div class="grid__item one-twelfth"></div><!--
         --><div class="grid__item desk--five-sixths">
             <h2 class="section-title section-title--center">Wizyty prywatne</h2> <!-- @todo -->
-            <div class="content-row">
-                <?php if(have_rows('prices_repeater')) {
-                    while(have_rows('prices_repeater')) {
-                        the_row();
-                        ?>
+            <?php if(have_rows('prices_repeater')) {
+                while(have_rows('prices_repeater')) {
+                    the_row();
+                    ?>
 
-                        <div class="content-row">
-                            <div class="grid">
-                                <div class="grid__item palm-hide desk--one-twelfth"></div><!--
-                        --><div class="grid__item desk--two-sixths">
-                            <h3 class="section-tagline"><?php the_sub_field('caption'); ?></h3>
-                        </div><!--
-                        -->
-                        <div class="grid__item palm-hide desk--one-twelfth"></div><!--
-                        --><div class="grid__item desk--two-sixths">
-                            <p class="section-content"><?php the_sub_field('value'); ?></p>
-                        </div><!--
-                        --><div class="grid__item palm-hide desk--one-twelfth"></div>
-                            </div>
+                    <div class="content-row">
+                        <div class="grid">
+                            <div class="grid__item palm-hide desk--one-twelfth"></div><!--
+                    --><div class="grid__item desk--two-sixths">
+                        <h3 class="section-tagline"><?php the_sub_field('caption'); ?></h3>
+                    </div><!--
+                    -->
+                    <div class="grid__item palm-hide desk--one-twelfth"></div><!--
+                    --><div class="grid__item desk--two-sixths">
+                        <p class="section-content"><?php the_sub_field('value'); ?></p>
+                    </div><!--
+                    --><div class="grid__item palm-hide desk--one-twelfth"></div>
                         </div>
-                        <?php
-                    }
-                } ?>
-            </div>
+                    </div>
+                    <?php
+                }
+            } ?>
         </div>
     </div>
 </section>

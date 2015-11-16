@@ -15,9 +15,17 @@
 
     .section-tagline {
         text-align: center;
+
+        @include min-screen($desktop) {
+            text-align: left;
+        }
     }
 
     .section-content {
         text-align: center;
+
+        @include min-screen($desktop) {
+            text-align: left;
+        }
     }
 }

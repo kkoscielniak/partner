@@ -147,3 +147,18 @@
         }
     }
 }
+
+.banner--parents-2 {
+    background-image: url('../img/horizon--desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+
+    .banner__header {
+        color: $white;
+
+        &:after {
+            background-color: $white;
+        }
+    }
+}

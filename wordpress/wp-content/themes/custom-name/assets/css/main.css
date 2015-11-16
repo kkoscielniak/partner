@@ -1659,6 +1659,20 @@ section {
   }
 }
 
+.banner--parents-2 {
+  background-image: url("../img/horizon--desktop.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  color: #FFFFFF;
+}
+.banner--parents-2 .banner__header {
+  color: #FFFFFF;
+}
+.banner--parents-2 .banner__header:after {
+  background-color: #FFFFFF;
+}
+
 footer {
   padding: 60px 20px 20px;
   background-color: #FFFFFF;
@@ -2054,8 +2068,18 @@ body.adults {
 .prices .section-tagline {
   text-align: center;
 }
+@media only screen and (min-width: 996px) {
+  .prices .section-tagline {
+    text-align: left;
+  }
+}
 .prices .section-content {
   text-align: center;
+}
+@media only screen and (min-width: 996px) {
+  .prices .section-content {
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
