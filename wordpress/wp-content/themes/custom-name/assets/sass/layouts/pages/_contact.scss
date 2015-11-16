@@ -16,20 +16,51 @@
 
         @include min-screen($desktop) {
             padding-top: 45px;
-
             font-size: 70px;
+        }
+    }
+
+    .contact__form {
+        @include min-screen($desktop) {
+            margin-top: 70px;
         }
     }
 
     .contact__column-headline {
         color: $white;
         font-family: $levato-black;
-        text-align: center;
         text-transform: uppercase;
 
         @include min-screen($desktop) {
             font-size: 32px;
         }
+    }
+
+    .contact__address {
+        color: $white;
+        margin-top: 0;
+        font-family: $lato;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+
+        a {
+            color: $white;
+            margin-top: 0;
+            font-family: $lato;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0;
+            text-decoration: none;
+        }
+    }
+
+    .contact__office-hours {
+        @extend .contact__address;
+
+        margin: 10px 0;
+        font-family: $levato-black;
     }
 
     input[type="email"],
@@ -39,6 +70,20 @@
         width: 100%;
         border: 1px solid $white;
 
+        &::-moz-placeholder {
+          color: $white;
+          opacity: 1;
+        }
+        &:-ms-input-placeholder {
+          color: $white;
+        }
+        &::-webkit-input-placeholder {
+          color: $white;
+        }
+        &::placeholder {
+          font-weight: 600;
+        }
+
         background-color: transparent !important;
         color: $white;
     }
@@ -46,5 +91,29 @@
     input[type="email"] {
         margin-top: 20px;
         margin-bottom: 30px;
+    }
+
+    input[type="submit"] {
+        display: block;
+        margin: 30px auto 0;
+        border: 0;
+        border-bottom: 2px solid $white;
+        background: transparent;
+        color: $white;
+        font-family: $levato-black;
+        font-size: 24px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.map-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 420px;
+
+    #map-canvas {
+        height: 100%;
     }
 }
