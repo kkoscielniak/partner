@@ -1,0 +1,23 @@
+.prices__first-section {
+    margin-top: 100px;
+
+    @include min-screen($desktop) {
+        margin-top: 100px;
+    }
+}
+
+.prices {
+    .content-row {
+        @include min-screen($desktop) {
+            padding-top: 35px;
+        }
+    }
+
+    .section-tagline {
+        text-align: center;
+    }
+
+    .section-content {
+        text-align: center;
+    }
+}

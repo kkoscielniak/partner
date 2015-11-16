@@ -30,7 +30,7 @@
             </div><!--
             --><div class="grid__item palm-hide desk--one-twelfth"></div><!--
             --><div class="grid__item desk--one-third">
-                <p class="contact__column-headline">Napisz do nas</p>
+                <p class="contact__column-headline contact__column-headline--center">Napisz do nas</p>
                 <?php if(get_field('contact_form')) {
                     the_field('contact_form');
                 } ?>

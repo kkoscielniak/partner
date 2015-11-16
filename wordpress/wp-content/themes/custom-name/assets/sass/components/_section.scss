@@ -34,6 +34,17 @@ section {
             font-weight: 600;
         }
     }
+
+    &.section-title--center {
+        font-size: 30px;
+        line-height: 40px;
+
+        @include min-screen($desktop) {
+            padding-bottom: 0;
+            font-size: 40px;
+            font-weight: 600;
+        }
+    }
 }
 
 .section-tagline {

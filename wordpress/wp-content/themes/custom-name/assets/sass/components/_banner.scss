@@ -110,3 +110,40 @@
         }
     }
 }
+
+.banner--prices {
+    background-image: url('../img/banner-prices.jpg');
+
+    height: 430px;
+
+    @include min-screen($desktop) {
+        height: 450px;
+    }
+
+    .banner-title-container {
+        height: 180px;
+
+        @include min-screen($desktop) {
+            height: 250px;
+        }
+    }
+
+    .banner-nfz-logo-container {
+        position: relative;
+        top: 70px;
+
+        display: none;
+
+        @include min-screen($desktop) {
+            display: block;
+        }
+
+        &--mobile {
+            display: block;
+
+            @include min-screen($desktop) {
+                display: none;
+            }
+        }
+    }
+}

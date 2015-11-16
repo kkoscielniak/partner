@@ -14,5 +14,36 @@ header {
 
     @include min-screen($desktop) {
         max-width: 205px;
+        display: inline-block;
+    }
+}
+
+.nav-container {
+
+    display: none;
+
+    @include min-screen($desktop) {
+        display: inline-block;
+        float: right;
+    }
+
+    .navbar-nav {
+        display: inline-block;
+
+        li {
+            display: inline-block;
+
+            &.active {
+                a {
+                    color: $nav-hover;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 16px;
+                padding-left: 30px;
+            }
+        }
     }
 }

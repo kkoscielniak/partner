@@ -1281,7 +1281,32 @@ header {
 @media only screen and (min-width: 996px) {
   .header__logo {
     max-width: 205px;
+    display: inline-block;
   }
+}
+
+.nav-container {
+  display: none;
+}
+@media only screen and (min-width: 996px) {
+  .nav-container {
+    display: inline-block;
+    float: right;
+  }
+}
+.nav-container .navbar-nav {
+  display: inline-block;
+}
+.nav-container .navbar-nav li {
+  display: inline-block;
+}
+.nav-container .navbar-nav li.active a {
+  color: #ffc299;
+}
+.nav-container .navbar-nav li a {
+  text-decoration: none;
+  font-size: 16px;
+  padding-left: 30px;
 }
 
 section {
@@ -1315,6 +1340,17 @@ section {
 }
 @media only screen and (min-width: 996px) {
   .section-title.section-title--left {
+    padding-bottom: 0;
+    font-size: 40px;
+    font-weight: 600;
+  }
+}
+.section-title.section-title--center {
+  font-size: 30px;
+  line-height: 40px;
+}
+@media only screen and (min-width: 996px) {
+  .section-title.section-title--center {
     padding-bottom: 0;
     font-size: 40px;
     font-weight: 600;
@@ -1585,6 +1621,42 @@ section {
 }
 .banner--kids-3 .banner__header:after, .banner--kids-3 .banner__content:after {
   background-color: #FFFFFF;
+}
+
+.banner--prices {
+  background-image: url("../img/banner-prices.jpg");
+  height: 430px;
+}
+@media only screen and (min-width: 996px) {
+  .banner--prices {
+    height: 450px;
+  }
+}
+.banner--prices .banner-title-container {
+  height: 180px;
+}
+@media only screen and (min-width: 996px) {
+  .banner--prices .banner-title-container {
+    height: 250px;
+  }
+}
+.banner--prices .banner-nfz-logo-container {
+  position: relative;
+  top: 70px;
+  display: none;
+}
+@media only screen and (min-width: 996px) {
+  .banner--prices .banner-nfz-logo-container {
+    display: block;
+  }
+}
+.banner--prices .banner-nfz-logo-container--mobile {
+  display: block;
+}
+@media only screen and (min-width: 996px) {
+  .banner--prices .banner-nfz-logo-container--mobile {
+    display: none;
+  }
 }
 
 footer {
@@ -1963,6 +2035,27 @@ body.adults {
 }
 .map-container #map-canvas {
   height: 100%;
+}
+
+.prices__first-section {
+  margin-top: 100px;
+}
+@media only screen and (min-width: 996px) {
+  .prices__first-section {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 996px) {
+  .prices .content-row {
+    padding-top: 35px;
+  }
+}
+.prices .section-tagline {
+  text-align: center;
+}
+.prices .section-content {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
