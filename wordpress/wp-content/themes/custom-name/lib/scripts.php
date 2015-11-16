@@ -99,3 +99,9 @@ function webfonts() { ?>
 
 <?php }
 add_action('wp_head', 'webfonts', 20);
+
+
+function register_my_menu() {
+  register_nav_menu('additional_menu',__( 'Additional Menu' ));
+}
+add_action( 'init', 'register_my_menu' );

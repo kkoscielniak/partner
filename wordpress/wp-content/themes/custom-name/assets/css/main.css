@@ -1516,13 +1516,15 @@ section {
     height: 310px;
   }
 }
-.banner .banner__header {
+.banner .banner__content {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
      transform: translateY(-50%);
+}
+.banner .banner__header {
   color: #FFFFFF;
   font-family: "Lovelo Black";
   font-size: 50px;
@@ -1598,7 +1600,6 @@ section {
 }
 
 .banner--kids {
-  height: 375px;
   background-image: url("../img/banner-kids.jpg");
   color: #53524f;
 }
@@ -1671,6 +1672,24 @@ section {
 }
 .banner--parents-2 .banner__header:after {
   background-color: #FFFFFF;
+}
+
+ul#menu-additional {
+  list-style-type: none;
+  margin-top: 30px;
+  padding: 0;
+  width: 100%;
+}
+ul#menu-additional li {
+  display: inline;
+  padding: 0 10px;
+}
+ul#menu-additional li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+ul#menu-additional li.active a {
+  color: #ffc299;
 }
 
 footer {

@@ -1,5 +1,12 @@
 <section class="banner banner--adults">
-    <h1 class="banner__header"><?php the_title(); ?></h1>
+    <div class="banner__content">
+        <h1 class="banner__header"><?php the_title(); ?></h1>
+        <?php
+            if (has_nav_menu('additional_menu')) :
+                wp_nav_menu(array('theme_location' => 'additional_menu', 'menu_class' => 'nav navbar-nav additional-nav'));
+            endif;
+        ?>
+    </div>
 </section>
 
 <section class="adults">
