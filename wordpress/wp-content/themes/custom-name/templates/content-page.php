@@ -3,9 +3,11 @@
         <div class="grid">
             <div class="grid__item palm-hide one-whole desk--one-twelfth"></div><!--
             --><div class="grid__item one-whole desk--five-sixths">
-                <h1 class="section__page-title-text home__title">
-                    <?php the_field('main_header'); ?>
-                </h1>
+                <div class="home__title-container">
+                    <h1 class="section__page-title-text home__title">
+                        <?php the_field('main_header'); ?>
+                    </h1>
+                </div>
             </div>
         </div>
     </section>
@@ -14,8 +16,8 @@
         <div class="grid">
             <div class="grid__item palm-hide desk--one-twelfth"></div><!--
             --><div class="grid__item desk--four-twelfths">
-                <h2>Rodzice</h2>
-                <p>Pomagamy rozwiązywać problemy wychowawcze i skutecznie radzić sobie z trudnymi sytuacjami. Wspieramy w tym jak być dobrym i skutecznym rodzicem, i jak stwarzać dziecku i nastolatkowi warunki do pełnego, wartościowego rozwoju.</p>
+                <h2><?php the_field('parents_title'); ?></h2>
+                <p><?php the_field('parents_description'); ?></p>
                 <!-- <a href="#">Czytaj więcej</a> -->
             </div>
         </div>
@@ -36,16 +38,16 @@
 
         --><div class="grid__item palm-hide desk--five-twelfths wide-desk--four-twelfths">
             <div class="section--text">
-                <h2>Dzieci<br/>i młodzież</h2>
-                <p>Pomagamy rozpoznawać źródła trudności oraz potrzeby dzieci i młodzieży, kształtujemy nastawienie na rozwój i pozytywną zmianę. Rozpoznajemy trudności szkolne (np. dysleksję) oraz badamy dojrzałość szkolną. Wystawiamy opinie uznawane przez szkoły.</p>
+                <h2><?php the_field('kids_title'); ?></h2>
+                <p><?php the_field('kids_description'); ?></p>
             </div>
         </div>
     </div>
 </section>
 
 <section class="section--text desk-hide wide-desk-hide">
-    <h2>Dzieci<br/>i młodzież</h2>
-    <p>Pomagamy rozpoznawać źródła trudności oraz potrzeby dzieci i młodzieży, kształtujemy nastawienie na rozwój i pozytywną zmianę. Rozpoznajemy trudności szkolne (np. dysleksję) oraz badamy dojrzałość szkolną. Wystawiamy opinie uznawane przez szkoły.</p>
+    <h2><?php the_field('kids_title'); ?></h2>
+    <p><?php the_field('kids_description'); ?></p>
     <!-- <a href="#">Czytaj więcej</a> -->
 </section>
 
@@ -53,8 +55,8 @@
     <div class="grid">
         <div class="grid__item palm-hide desk--two-twelfths"></div><!--
         --><div class="grid__item one-whole desk--four-twelfths">
-            <h2>Dorośli</h2>
-            <p>Wspieramy dorosłych w odkrywaniu siebie oraz czerpaniu satysfakcji i przyjemności z życia. Pomagamy zmagać się z trudnościami oraz rozwijać troskliwą, opartą na miłości i wzajemnym szacunku relację z innymi. </p>
+            <h2><?php the_field('adults_title'); ?></h2>
+            <p><?php the_field('adults_description'); ?></p>
             <!-- <a href="#">Czytaj więcej</a> -->
         </div>
 </section>
@@ -62,8 +64,8 @@
 <section class="section--text section--text-small home__peace">
     <div class="grid">
         <div class="grid__item one-whole desk--one-half">
-            <h3>Człowiek, który czuje się przynależny ma poczucie, że pasuje do innych ludzi , że jest ważny i kochany. </h3>
-            <p class="section--text-small__paragraph">Jest wówczas spokojniejszy i czuje się wartościowy. Wtedy też jest radośniejszy, szczęśliwszy i zdrowszy oraz osiąga lepsze wyniki w nauce i w pracy.</p>
+            <h3><?php the_field('banner_title'); ?></h3>
+            <p class="section--text-small__paragraph"><?php the_field('banner_description'); ?></p>
         </div>
     </div>
 </section>

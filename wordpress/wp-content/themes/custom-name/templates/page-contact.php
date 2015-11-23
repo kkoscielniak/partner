@@ -7,25 +7,39 @@
             --><div class="grid__item desk--one-quarter">
                 <p class="contact__column-headline">Kraków</p>
                 <p class="contact__address">
-                    ul. Zamoyskiego 53 lok. 4<br/>
-                    <a href="tel:+48733222600">tel: 733 222 600</a>
+                    <?php if (function_exists( 'contact_detail' )) {
+                        contact_detail( 'address_cracow' );
+                    } ?><br/>
+                    <a href="tel:<?php if (function_exists( 'contact_detail' )) {
+                        contact_detail( 'phone_cracow' );
+                    } ?>"><?php if (function_exists( 'contact_detail' )) {
+                        contact_detail( 'phone_cracow' );
+                    } ?></a>
                 </p>
                 <p class="contact__office-hours">
-                    pon-pt:<br/>
-                    08.00-22.00<br/>
-                    SB:<br/>
-                    08.00-16.00<br/>
+                    <?php if (function_exists( 'contact_detail' )) {
+                        contact_detail( 'office_cracow' );
+                    } ?>
                 </p>
             </div><!--
             --><div class="grid__item desk--one-quarter">
                 <p class="contact__column-headline">Gliwice</p>
                 <p class="contact__address">
-                    ul. Wieczorka 2<br/>
-                    <a href="tel:+48322312690">tel: 32 231 26 90 wew. 25</a>
+                    <?php if (function_exists( 'contact_detail' )) {
+                        contact_detail( 'address_gliwice' );
+                    } ?><br/>
+                    <a href="tel:<?php if (function_exists( 'contact_detail' )) {
+                        contact_detail('phone_gliwice');
+                    } ?>">
+                        <?php if (function_exists( 'contact_detail' )) {
+                            contact_detail('phone_gliwice');
+                        } ?>
+                    </a>
                 </p>
                 <p class="contact__office-hours">
-                    pon-pt:<br/>
-                    08.00-22.00<br/>
+                    <?php if (function_exists( 'contact_detail' )) {
+                        contact_detail( 'office_gliwice' );
+                    } ?>
                 </p>
             </div><!--
             --><div class="grid__item palm-hide desk--one-twelfth"></div><!--

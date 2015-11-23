@@ -1516,7 +1516,7 @@ section {
     height: 310px;
   }
 }
-.banner .banner__content {
+.banner .banner__main-content {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1545,6 +1545,11 @@ section {
   width: 145px;
   height: 10px;
   background-color: #FFFFFF;
+}
+@media only screen and (min-width: 996px) {
+  .banner .banner__header:after {
+    top: 92px;
+  }
 }
 @media only screen and (min-width: 996px) {
   .banner .banner__header.banner__header--secondary {
@@ -1676,7 +1681,7 @@ section {
 
 ul#menu-additional {
   list-style-type: none;
-  margin-top: 30px;
+  margin-top: 50px;
   padding: 0;
   width: 100%;
 }
@@ -1793,6 +1798,14 @@ footer {
 
 .home .home__title {
   max-width: 850px;
+}
+.home .home__title-container {
+  height: 333px;
+}
+@media only screen and (min-width: 996px) {
+  .home .home__title-container {
+    height: auto;
+  }
 }
 @media only screen and (min-width: 996px) {
   .home .home__background-container {

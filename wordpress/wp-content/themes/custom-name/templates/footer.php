@@ -1,5 +1,7 @@
 <footer>
-    <h2 class="footer__title">Skontaktuj się z nami</h2>
+
+    <?php if(!is_page('contact')) { ?>
+    <h2 class="footer__title"><?php the_field('footer_title'); ?></h2>
 
     <div class="footer__info">
         <div class="grid">
@@ -11,16 +13,19 @@
             --><div class="grid__item one-whole desk--one-quarter">
                 <h2>Kraków</h2>
                 <p class="footer__address">
-                    ul. Zamoyskiego 53 lok. 4<br/>
-                    tel: 733 222 600
+                    <?php if (function_exists( 'contact_detail' )) {
+                        contact_detail( 'address_cracow' );
+                    } ?><br/>
+                    <a href="tel:<?php if (function_exists( 'contact_detail' )) {
+                        contact_detail( 'phone_cracow' );
+                    } ?>"><?php if (function_exists( 'contact_detail' )) {
+                        contact_detail( 'phone_cracow' );
+                    } ?></a>
                 </p>
                 <p class="footer__office-hours">
-                    pon-pt:<br/>
-                    06.00-22.00
-                </p>
-                <p class="footer__office-hours">
-                    SB:<br/>
-                    08.00-16.00
+                    <?php if (function_exists( 'contact_detail' )) {
+                        contact_detail( 'office_cracow' );
+                    } ?>
                 </p>
             </div><!--
             --><div class="grid__item one-whole desk--one-quarter">
@@ -31,16 +36,27 @@
             --><div class="grid__item one-whole desk--one-quarter">
                 <h2>Gliwice</h2>
                 <p class="footer__address">
-                    ul. Wieczorka 22<br/>
-                    tel: 32 231 26 90 wew. 25
+                    <?php if (function_exists( 'contact_detail' )) {
+                        contact_detail( 'address_gliwice' );
+                    } ?><br/>
+                    <a href="tel:<?php if (function_exists( 'contact_detail' )) {
+                        contact_detail('phone_gliwice');
+                    } ?>">
+                        <?php if (function_exists( 'contact_detail' )) {
+                            contact_detail('phone_gliwice');
+                        } ?>
+                    </a>
                 </p>
                 <p class="footer__office-hours">
-                    pon-pt:<br/>
-                    06.00-20.00
+                    <?php if (function_exists( 'contact_detail' )) {
+                        contact_detail( 'office_gliwice' );
+                    } ?>
                 </p>
             </div>
         </div>
     </div>
+
+    <?php } ?>
 
     <div class="footer__bottom">
         <div class="grid">

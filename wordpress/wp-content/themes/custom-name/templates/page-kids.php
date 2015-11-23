@@ -1,5 +1,5 @@
 <section class="banner banner--kids">
-    <div class="banner__content">
+    <div class="banner__main-content">
         <h1 class="banner__header"><?php the_title(); ?></h1>
         <?php
             if (has_nav_menu('additional_menu')) :
