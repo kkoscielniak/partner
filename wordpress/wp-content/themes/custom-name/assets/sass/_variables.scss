@@ -23,12 +23,12 @@ $desktop: 996px;
 $wide-desktop: 1440px;
 
 $breakpoints: (
-    'palm' '(max-width: #{$desktop - 1})',
-    // todo tablet
+    'palm' '(max-width: #{$tablet - 1})',
+    'lap' '(min-width: #{$tablet})',
     'desk' '(min-width: #{$desktop})',
     'wide-desk' '(min-width: #{$wide-desktop})'
 );
 
-$breakpoint-has-widths: ('palm', 'desk', 'wide-desk');
-$breakpoint-has-push:   ('palm', 'desk', 'wide-desk');
-$breakpoint-has-pull:   ('palm', 'desk', 'wide-desk');
+$breakpoint-has-widths: ('palm', 'lap', 'desk', 'wide-desk');
+$breakpoint-has-push:   ('palm', 'lap', 'desk', 'wide-desk');
+$breakpoint-has-pull:   ('palm', 'lap', 'desk', 'wide-desk');

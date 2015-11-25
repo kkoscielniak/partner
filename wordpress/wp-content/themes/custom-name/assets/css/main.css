@@ -786,7 +786,7 @@ th {
 /**
  * Our responsive classes, if we have enabled them.
  */
-@media only screen and (max-width: 995px) {
+@media only screen and (max-width: 639px) {
   /**
    * Whole
    */
@@ -907,6 +907,130 @@ th {
   }
 
   .palm--eleven-twelfths {
+    width: 91.666%;
+  }
+}
+@media only screen and (min-width: 640px) {
+  /**
+   * Whole
+   */
+  .lap--one-whole {
+    width: 100%;
+  }
+
+  /**
+   * Halves
+   */
+  .lap--one-half, .lap--two-quarters, .lap--three-sixths, .lap--four-eighths, .lap--five-tenths, .lap--six-twelfths {
+    width: 50%;
+  }
+
+  /**
+   * Thirds
+   */
+  .lap--one-third, .lap--two-sixths, .lap--four-twelfths {
+    width: 33.333%;
+  }
+
+  .lap--two-thirds, .lap--four-sixths, .lap--eight-twelfths {
+    width: 66.666%;
+  }
+
+  /**
+   * Quarters
+   */
+  .lap--one-quarter, .lap--two-eighths, .lap--three-twelfths {
+    width: 25%;
+  }
+
+  .lap--three-quarters, .lap--six-eighths, .lap--nine-twelfths {
+    width: 75%;
+  }
+
+  /**
+   * Fifths
+   */
+  .lap--one-fifth, .lap--two-tenths {
+    width: 20%;
+  }
+
+  .lap--two-fifths, .lap--four-tenths {
+    width: 40%;
+  }
+
+  .lap--three-fifths, .lap--six-tenths {
+    width: 60%;
+  }
+
+  .lap--four-fifths, .lap--eight-tenths {
+    width: 80%;
+  }
+
+  /**
+   * Sixths
+   */
+  .lap--one-sixth, .lap--two-twelfths {
+    width: 16.666%;
+  }
+
+  .lap--five-sixths, .lap--ten-twelfths {
+    width: 83.333%;
+  }
+
+  /**
+   * Eighths
+   */
+  .lap--one-eighth {
+    width: 12.5%;
+  }
+
+  .lap--three-eighths {
+    width: 37.5%;
+  }
+
+  .lap--five-eighths {
+    width: 62.5%;
+  }
+
+  .lap--seven-eighths {
+    width: 87.5%;
+  }
+
+  /**
+   * Tenths
+   */
+  .lap--one-tenth {
+    width: 10%;
+  }
+
+  .lap--three-tenths {
+    width: 30%;
+  }
+
+  .lap--seven-tenths {
+    width: 70%;
+  }
+
+  .lap--nine-tenths {
+    width: 90%;
+  }
+
+  /**
+   * Twelfths
+   */
+  .lap--one-twelfth {
+    width: 8.333%;
+  }
+
+  .lap--five-twelfths {
+    width: 41.666%;
+  }
+
+  .lap--seven-twelfths {
+    width: 58.333%;
+  }
+
+  .lap--eleven-twelfths {
     width: 91.666%;
   }
 }
@@ -1170,7 +1294,7 @@ th {
 /**
  * Pull classes, to move grid items back to the left by certain amounts.
  */
-@media only screen and (max-width: 995px) {
+@media only screen and (max-width: 639px) {
   .palm-hide {
     display: none;
   }
@@ -1180,6 +1304,20 @@ th {
   }
 
   .palm-show {
+    display: inline-block;
+    opacity: 1;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .lap-hide {
+    display: none;
+  }
+
+  .lap-opaque {
+    opacity: 0;
+  }
+
+  .lap-show {
     display: inline-block;
     opacity: 1;
   }
@@ -1325,6 +1463,12 @@ section {
   line-height: 22px;
   text-align: center;
   text-transform: uppercase;
+}
+@media only screen and (min-width: 640px) {
+  .section-title {
+    font-size: 22px;
+    line-height: 28px;
+  }
 }
 @media only screen and (min-width: 996px) {
   .section-title {
@@ -1912,9 +2056,10 @@ footer {
 }
 @media only screen and (min-width: 640px) {
   .team__lightbox {
+    overflow: hidden;
     margin: auto;
     width: 700px;
-    padding: 50%;
+    padding: 50px;
   }
 }
 .overlay .team__lightbox.active {

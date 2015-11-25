@@ -18,7 +18,7 @@
                         the_row();
                         $img = get_sub_field('photo');
                         ?><!--
-                        --><div class="grid__item one-half desk--one-fifth">
+                        --><div class="grid__item one-half lap--one-third desk--one-fifth">
                             <div class="team__member js-team-member">
                                 <img class="team__photo"
                                     src="<?php echo $img['url']; ?>"
@@ -31,7 +31,12 @@
                         $i++;
                     }
                 }
-                ?>
+                ?><!-- @todo
+                        --><!-- <div class="grid__item one-half lap--one-third desk--one-fifth">
+                    <div class="team__member js-team-member">
+                        <a href="/contact" class="team__link">Dołącz do nas!</a>
+                    </div> -->
+                </div>
             </div>
         </div>
     </div>
@@ -51,12 +56,6 @@
                     <div class="js-lightbox-content">
                         <p class="lightbox-name"><?php the_sub_field('name'); ?></p>
                         <p class="lightbox-name lightbox-role"><?php the_sub_field('role'); ?></p>
-                        <p class="lightbox-description"><?php the_sub_field('description'); ?></p>
-                        <p class="lightbox-description"><?php the_sub_field('description'); ?></p>
-                        <p class="lightbox-description"><?php the_sub_field('description'); ?></p>
-                        <p class="lightbox-description"><?php the_sub_field('description'); ?></p>
-                        <p class="lightbox-description"><?php the_sub_field('description'); ?></p>
-                        <p class="lightbox-description"><?php the_sub_field('description'); ?></p>
                         <p class="lightbox-description"><?php the_sub_field('description'); ?></p>
                     </div>
 
