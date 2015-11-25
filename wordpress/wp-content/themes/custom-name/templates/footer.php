@@ -5,12 +5,12 @@
 
     <div class="footer__info">
         <div class="grid">
-            <div class="grid__item one-whole desk--one-quarter">
+            <div class="grid__item one-whole lap--one-quarter">
                 <div class="footer__image-container">
                     <img class="footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/img/footer-image-1--mobile.png">
                 </div>
             </div><!--
-            --><div class="grid__item one-whole desk--one-quarter">
+            --><div class="grid__item one-whole lap--one-quarter">
                 <h2>Kraków</h2>
                 <p class="footer__address">
                     <?php if (function_exists( 'contact_detail' )) {
@@ -28,12 +28,12 @@
                     } ?>
                 </p>
             </div><!--
-            --><div class="grid__item one-whole desk--one-quarter">
+            --><div class="grid__item one-whole lap--one-quarter">
                 <div class="footer__image-container">
                     <img class="footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/img/footer-image-2--mobile.png">
                 </div>
             </div><!--
-            --><div class="grid__item one-whole desk--one-quarter">
+            --><div class="grid__item one-whole lap--one-quarter">
                 <h2>Gliwice</h2>
                 <p class="footer__address">
                     <?php if (function_exists( 'contact_detail' )) {
@@ -61,12 +61,14 @@
     <div class="footer__bottom">
         <div class="grid">
             <div class="grid__item desk--three-twelfths"></div><!--
-            --><div class="grid__item desk--one-twelfth">
+            --><div class="grid__item lap--one-twelfth">
                 <div class="footer__social-media">
-                    <img class="footer__social-media-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook--mobile.png">
+                    <a href="https://www.facebook.com/poradnia.partner/">
+                        <img class="footer__social-media-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook--mobile.png">
+                    </a>
                 </div>
             </div><!--
-            --><div class="grid__item desk--five-twelfths">
+            --><div class="grid__item lap--ten-twelfths">
                 <div class="footer__copyright">
                     <a href="/cookies">Cookies</a>
                     <p>Designed by Ewa Kwiatek</p>

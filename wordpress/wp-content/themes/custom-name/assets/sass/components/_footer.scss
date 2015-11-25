@@ -20,9 +20,13 @@ footer {
 .footer__title {
     line-height: 40px;
 
+    @include min-screen($tablet) {
+        line-height: 2em;
+    }
+
     @include min-screen($desktop) {
-        font-size: 50px;
         line-height: 1em;
+        font-size: 50px;
         text-align: center;
     }
 }
@@ -58,7 +62,8 @@ footer {
 .footer__social-media {
     margin-top: 30px;
 
-    @include min-screen($desktop) {
+    @include min-screen($tablet) {
+        margin-top: 15px;
         display: inline-block;
     }
 
@@ -76,7 +81,7 @@ footer {
 .footer__copyright {
     margin-top: 30px;
 
-    @include min-screen($desktop) {
+    @include min-screen($tablet) {
         display: inline-block;
     }
 
@@ -90,8 +95,12 @@ footer {
         font-size: 14px;
         font-weight: 20px;
 
-        @include min-screen($desktop) {
+        @include min-screen($tablet) {
             display: inline-block;
+            margin-left: 30px;
+        }
+
+        @include min-screen($desktop) {
             margin-left: 60px;
         }
     }

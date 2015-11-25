@@ -1880,10 +1880,15 @@ footer {
 .footer__title {
   line-height: 40px;
 }
+@media only screen and (min-width: 640px) {
+  .footer__title {
+    line-height: 2em;
+  }
+}
 @media only screen and (min-width: 996px) {
   .footer__title {
-    font-size: 50px;
     line-height: 1em;
+    font-size: 50px;
     text-align: center;
   }
 }
@@ -1918,8 +1923,9 @@ footer {
 .footer__social-media {
   margin-top: 30px;
 }
-@media only screen and (min-width: 996px) {
+@media only screen and (min-width: 640px) {
   .footer__social-media {
+    margin-top: 15px;
     display: inline-block;
   }
 }
@@ -1936,7 +1942,7 @@ footer {
 .footer__copyright {
   margin-top: 30px;
 }
-@media only screen and (min-width: 996px) {
+@media only screen and (min-width: 640px) {
   .footer__copyright {
     display: inline-block;
   }
@@ -1950,9 +1956,14 @@ footer {
   font-size: 14px;
   font-weight: 20px;
 }
-@media only screen and (min-width: 996px) {
+@media only screen and (min-width: 640px) {
   .footer__copyright p {
     display: inline-block;
+    margin-left: 30px;
+  }
+}
+@media only screen and (min-width: 996px) {
+  .footer__copyright p {
     margin-left: 60px;
   }
 }
