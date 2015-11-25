@@ -68,7 +68,7 @@
                     </a>
                 </div>
             </div><!--
-            --><div class="grid__item lap--ten-twelfths">
+            --><div class="grid__item lap--ten-twelfths desk--five-twelfths">
                 <div class="footer__copyright">
                     <a href="/cookies">Cookies</a>
                     <p>Designed by Ewa Kwiatek</p>
