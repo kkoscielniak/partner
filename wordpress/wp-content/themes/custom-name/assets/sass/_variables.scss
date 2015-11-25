@@ -18,11 +18,13 @@ $lato: 'Lato';
 
 // Grid configuration
 // --------------------------
+$tablet: 640px;
 $desktop: 996px;
 $wide-desktop: 1440px;
 
 $breakpoints: (
     'palm' '(max-width: #{$desktop - 1})',
+    // todo tablet
     'desk' '(min-width: #{$desktop})',
     'wide-desk' '(min-width: #{$wide-desktop})'
 );

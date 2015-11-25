@@ -1865,23 +1865,20 @@ footer {
 
 .team .team__member {
   padding-bottom: 40px;
+  text-align: center;
 }
 .team .team__photo {
   border-radius: 50%;
 }
 .team .team__name {
   height: 40px;
+  margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
   font-family: "Lovelo Black";
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-}
-@media only screen and (min-width: 996px) {
-  .team .team__name {
-    max-width: 120px;
-  }
 }
 .team .team__link {
   display: block;
@@ -1897,13 +1894,14 @@ footer {
 
 .team__lightbox {
   position: fixed;
-  width: 700px;
-  padding: 50px;
-  margin: auto;
+  overflow: scroll;
   top: 40%;
+  right: 0;
   bottom: 40%;
   left: 0;
-  right: 0;
+  max-height: 90%;
+  margin: auto 15px;
+  padding: 15px 15px 30px;
   background-color: #FFFFFF;
   text-align: center;
   opacity: 0;
@@ -1911,6 +1909,13 @@ footer {
   -webkit-transition: opacity 250ms ease-in;
        -o-transition: opacity 250ms ease-in;
           transition: opacity 250ms ease-in;
+}
+@media only screen and (min-width: 640px) {
+  .team__lightbox {
+    margin: auto;
+    width: 700px;
+    padding: 50%;
+  }
 }
 .overlay .team__lightbox.active {
   opacity: 1;

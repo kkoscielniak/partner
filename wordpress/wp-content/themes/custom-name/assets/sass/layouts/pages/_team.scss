@@ -2,6 +2,7 @@
 
     .team__member {
         padding-bottom: 40px;
+        text-align: center;
     }
 
     .team__photo {
@@ -11,6 +12,7 @@
     .team__name {
         height: 40px;
 
+        margin-top: 20px;
         margin-right: auto;
         margin-left: auto;
 
@@ -20,7 +22,7 @@
         text-align: center;
 
         @include min-screen($desktop) {
-            max-width: 120px;
+            // max-width: 120px;
         }
     }
 
@@ -42,14 +44,18 @@
 .team__lightbox {
     position: fixed;
 
-    width: 700px;
-    padding: 50px;
+    overflow: scroll;
 
-    margin: auto;
     top: 40%;
+    right: 0;
     bottom: 40%;
     left: 0;
-    right: 0;
+
+    max-height: 90%;
+
+    margin: auto 15px;
+    padding: 15px 15px 30px;
+
 
     background-color: $white;
 
@@ -60,6 +66,12 @@
     visibility: hidden;
 
     transition: opacity 250ms ease-in;
+
+    @include min-screen($tablet) {
+        margin: auto;
+        width: 700px;
+        padding: 50%;
+    }
 
     .overlay &.active {
         opacity: 1;

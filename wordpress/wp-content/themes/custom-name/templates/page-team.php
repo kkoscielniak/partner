@@ -52,6 +52,12 @@
                         <p class="lightbox-name"><?php the_sub_field('name'); ?></p>
                         <p class="lightbox-name lightbox-role"><?php the_sub_field('role'); ?></p>
                         <p class="lightbox-description"><?php the_sub_field('description'); ?></p>
+                        <p class="lightbox-description"><?php the_sub_field('description'); ?></p>
+                        <p class="lightbox-description"><?php the_sub_field('description'); ?></p>
+                        <p class="lightbox-description"><?php the_sub_field('description'); ?></p>
+                        <p class="lightbox-description"><?php the_sub_field('description'); ?></p>
+                        <p class="lightbox-description"><?php the_sub_field('description'); ?></p>
+                        <p class="lightbox-description"><?php the_sub_field('description'); ?></p>
                     </div>
 
                     <a href="#" class="lightbox-close js-lightbox-close">
