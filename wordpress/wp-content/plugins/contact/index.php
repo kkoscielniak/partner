@@ -33,6 +33,7 @@ if ( !class_exists( 'ContactDetails' ) )
 		public function init() {
 			$this->details = array(
 				'phone_gliwice' => __( 'Telefon - Gliwice', 'contact' ),
+                'phone_gliwice_2' => __( 'Telefon - Gliwice #2', 'contact' ),
 
                 'phone_cracow' => __( 'Telefon - Kraków', 'contact' ),
 
