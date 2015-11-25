@@ -34,6 +34,14 @@
                         <?php if (function_exists( 'contact_detail' )) {
                             contact_detail('phone_gliwice');
                         } ?>
+                    </a><br/>
+                    lub<br/>
+                    <a href="tel:<?php if (function_exists( 'contact_detail' )) {
+                        contact_detail('phone_gliwice_2');
+                    } ?>">
+                        <?php if (function_exists( 'contact_detail' )) {
+                            contact_detail('phone_gliwice_2');
+                        } ?>
                     </a>
                 </p>
                 <p class="contact__office-hours">

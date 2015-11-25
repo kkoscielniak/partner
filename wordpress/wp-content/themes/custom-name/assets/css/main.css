@@ -1937,6 +1937,9 @@ footer {
   .footer__bottom {
     margin-top: 70px;
   }
+  .contact .footer__bottom {
+    margin-top: 0;
+  }
 }
 
 .footer__copyright {

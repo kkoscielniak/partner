@@ -75,6 +75,10 @@ footer {
 .footer__bottom {
     @include min-screen($desktop) {
         margin-top: 70px;
+
+        .contact & {
+            margin-top: 0;
+        }
     }
 }
 
