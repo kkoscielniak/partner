@@ -1,5 +1,7 @@
 <section class="banner banner--team">
-    <h1 class="banner__header">Zespół</h1>
+    <div class="banner__main-content">
+        <h1 class="banner__header">Zespół</h1>
+    </div>
 </section>
 
 <section class="team">
@@ -8,7 +10,7 @@
         --><div class="grid__item desk--five-sixths">
 
             <h2 class="section-title">Poznaj nasz wykwalifikowany zespół specjalistów</h2>
-            <div class="grid grid--center js-magic-move">
+            <div class="grid">
                 <?php
                 if(have_rows('team_members')) {
                     $i = 0;
@@ -25,9 +27,6 @@
                                 <a href="#" class="js-read-more team__link" data-index="<?php echo $i; ?>">Czytaj więcej</a>
                             </div>
                         </div><!--
-                        --><div class="js-description-<?php echo $i;?> grid__item one-whole team__member-description" style="display:none">
-                            aaa
-                        </div><!--
                         --><?php
                         $i++;
                     }
@@ -37,3 +36,31 @@
         </div>
     </div>
 </section>
+
+
+
+
+
+<div class="js-lightboxes">
+<?php
+    if(have_rows('team_members')) {
+        $i = 0;
+        while(have_rows('team_members')) {
+            the_row(); ?>
+                <div class="team__lightbox js-lightbox" data-index="<?php echo $i; ?>">
+                    <div class="js-lightbox-content">
+                        <p class="lightbox-name"><?php the_sub_field('name'); ?></p>
+                        <p class="lightbox-name lightbox-role"><?php the_sub_field('role'); ?></p>
+                        <p class="lightbox-description"><?php the_sub_field('description'); ?></p>
+                    </div>
+
+                    <a href="#" class="lightbox-close js-lightbox-close">
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            <?php $i++;
+        }
+    }
+?>
+</div>

@@ -1895,6 +1895,89 @@ footer {
   text-transform: uppercase;
 }
 
+.team__lightbox {
+  position: fixed;
+  width: 700px;
+  padding: 50px;
+  margin: auto;
+  top: 40%;
+  bottom: 40%;
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 250ms ease-in;
+       -o-transition: opacity 250ms ease-in;
+          transition: opacity 250ms ease-in;
+}
+.overlay .team__lightbox.active {
+  opacity: 1;
+  visibility: visible;
+}
+.team__lightbox .lightbox-name {
+  font-family: "Lovelo Black";
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: .15em;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+.team__lightbox .lightbox-name.lightbox-role {
+  font-family: "Lato";
+  font-weight: 400;
+}
+.team__lightbox .lightbox-description {
+  padding: 20px 0;
+  text-align: left;
+}
+.team__lightbox .lightbox-close {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+.team__lightbox .lightbox-close span {
+  display: block;
+  position: relative;
+  top: 0;
+  width: 40px;
+  height: 1px;
+  background-color: #000000;
+}
+.team__lightbox .lightbox-close span:first-of-type {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.team__lightbox .lightbox-close span:last-of-type {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 250ms ease-in;
+       -o-transition: opacity 250ms ease-in;
+          transition: opacity 250ms ease-in;
+  background-color: #000000;
+  opacity: 0;
+  visibility: hidden;
+}
+.overlay .lightbox-overlay {
+  opacity: .5;
+  visibility: visible;
+}
+
 .adults {
   padding-bottom: 50px;
 }

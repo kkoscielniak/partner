@@ -18,7 +18,6 @@
                 while(have_rows('the_repeater')) {
                     the_row();
                     ?>
-
                     <div class="content-row">
                         <div class="grid">
                             <div class="grid__item desk--one-third">

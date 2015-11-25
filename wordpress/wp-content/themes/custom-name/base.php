@@ -1,5 +1,6 @@
 <?php get_template_part('templates/head'); ?>
 <body <?php body_class(); ?>>
+    <div class="lightbox-overlay"></div>
 
   <!--[if lt IE 8]>
     <div class="alert alert-warning">
