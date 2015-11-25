@@ -1354,6 +1354,10 @@ body {
   background-color: #ffefdd;
   color: #53524f;
 }
+body.menu-open {
+  height: 100vh;
+  overflow: hidden;
+}
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -1415,9 +1419,12 @@ header {
 
 .header__logo {
   max-width: 30px;
+  float: left;
+  clear: left;
 }
 @media only screen and (min-width: 996px) {
   .header__logo {
+    float: none;
     max-width: 205px;
     display: inline-block;
   }
@@ -1425,6 +1432,22 @@ header {
 
 .nav-container {
   display: none;
+}
+.menu-open .nav-container {
+  display: block;
+}
+@media only screen and (max-width: 995px) {
+  .nav-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 80px 30px 30px;
+    background: #ecb6a6;
+    z-index: 1;
+    text-align: center;
+  }
 }
 @media only screen and (min-width: 996px) {
   .nav-container {
@@ -1434,17 +1457,88 @@ header {
 }
 .nav-container .navbar-nav {
   display: inline-block;
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0;
 }
-.nav-container .navbar-nav li {
-  display: inline-block;
+@media only screen and (min-width: 996px) {
+  .nav-container .navbar-nav {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 996px) {
+  .nav-container .navbar-nav li {
+    display: inline-block;
+  }
 }
 .nav-container .navbar-nav li.active a {
   color: #ffc299;
 }
 .nav-container .navbar-nav li a {
   text-decoration: none;
-  font-size: 16px;
-  padding-left: 30px;
+  font-size: 30px;
+  line-height: 46px;
+  letter-spacing: 0;
+}
+@media only screen and (min-width: 996px) {
+  .nav-container .navbar-nav li a {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.15em;
+    padding-left: 30px;
+  }
+}
+
+.mobile-trigger__container {
+  width: 40px;
+  height: 40px;
+  float: right;
+  clear: right;
+}
+.menu-open .mobile-trigger__container {
+  z-index: 3;
+  position: absolute;
+  right: 20px;
+}
+@media only screen and (min-width: 996px) {
+  .mobile-trigger__container {
+    display: none;
+  }
+}
+.mobile-trigger__container a {
+  position: relative;
+  top: 5px;
+}
+.mobile-trigger__container a span {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 1px;
+  margin-bottom: 10px;
+  background-color: #000000;
+  -webkit-transition: all 250ms ease-in;
+       -o-transition: all 250ms ease-in;
+          transition: all 250ms ease-in;
+}
+.menu-open .mobile-trigger__container a span:first-of-type {
+  top: 10px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.menu-open .mobile-trigger__container a span:last-of-type {
+  top: -11px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media only screen and (min-width: 996px) {
+  .znany-lekarz-trigger {
+    margin-left: 30px;
+  }
 }
 
 section {

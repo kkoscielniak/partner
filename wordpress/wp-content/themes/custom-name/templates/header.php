@@ -9,14 +9,14 @@
         </a>
     </div>
 
-<!--     <div class="mobile-trigger__container">
+    <div class="mobile-trigger__container">
         <a class="mobile-trigger js-mobile-navigation" href="#">
             <span></span>
             <span></span>
             <span></span>
         </a>
     </div>
- -->
+
     <div class="nav-container">
         <nav class="collapse navbar-collapse" role="navigation">
         <?php
@@ -28,7 +28,6 @@
         <a href="http://www.znanylekarz.pl/placowki/poradnia-psychologiczna-partner" style="display: inline-block;
             font-family: Helvetica;
             color: #fff;
-            margin-left: 30px;
             background-color: #1b9ad8;
             background: -moz-linear-gradient(top, #1b9ad8 0%, #138cd1 100%);
             background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1b9ad8), color-stop(100%, #138cd1));
@@ -43,7 +42,8 @@
             box-shadow: 0 0 2px rgba(0, 0, 0, .2);
             -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .2);
             border-radius: 3px;
-            border: 1px solid #0e75b0" data-zl-widget-facility="poradnia-psychologiczna-partner">Umów się online</a><br><br>
+            border: 1px solid #0e75b0" data-zl-widget-facility="poradnia-psychologiczna-partner"
+            class="znany-lekarz-trigger">Umów się online</a><br><br>
 
         <script id="zl-facility-widget" src="http://www.znanylekarz.pl/platform/js/widget.js"></script>
         </nav>

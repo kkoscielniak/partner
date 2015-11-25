@@ -11,8 +11,11 @@ header {
 
 .header__logo {
     max-width: 30px;
+    float: left;
+    clear: left;
 
     @include min-screen($desktop) {
+        float: none;
         max-width: 205px;
         display: inline-block;
     }
@@ -22,6 +25,22 @@ header {
 
     display: none;
 
+    .menu-open & {
+        display: block;
+    }
+
+    @include max-screen(#{$desktop - 1}) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 80px 30px 30px;
+        background: $bg-menu;
+        z-index: 1;
+        text-align: center;
+    }
+
     @include min-screen($desktop) {
         display: inline-block;
         float: right;
@@ -30,8 +49,19 @@ header {
     .navbar-nav {
         display: inline-block;
 
+        text-align: center;
+
+        list-style-type: none;
+        padding-left: 0;
+
+        @include min-screen($desktop) {
+            text-align: left;
+        }
+
         li {
-            display: inline-block;
+            @include min-screen($desktop) {
+                display: inline-block;
+            }
 
             &.active {
                 a {
@@ -41,9 +71,70 @@ header {
 
             a {
                 text-decoration: none;
-                font-size: 16px;
-                padding-left: 30px;
+                font-size: 30px;
+                line-height: 46px;
+                letter-spacing: 0;
+
+                @include min-screen($desktop) {
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: 0.15em;
+                    padding-left: 30px;
+                }
             }
         }
     }
 }
+
+
+.mobile-trigger__container {
+    width: 40px;
+    height: 40px;
+    float: right;
+    clear: right;
+
+    .menu-open & {
+        z-index: 3;
+        position: absolute;
+        right: 20px;
+    }
+
+    @include min-screen($desktop) {
+        display: none;
+    }
+
+    a {
+        position: relative;
+        top: 5px;
+
+        span {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 1px;
+            margin-bottom: 10px;
+            background-color: $black;
+
+            transition: all 250ms ease-in;
+
+            .menu-open & {
+
+                &:first-of-type {
+                    top: 10px;
+                    transform: rotate(45deg);
+                }
+
+                &:last-of-type {
+                    top: -11px;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}
+
+    .znany-lekarz-trigger {
+        @include min-screen($desktop) {
+            margin-left: 30px;
+        }
+    }
