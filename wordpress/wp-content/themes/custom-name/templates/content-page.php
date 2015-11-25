@@ -1,8 +1,8 @@
 <div class="home__background-container">
     <section class="section__page-title">
         <div class="grid">
-            <div class="grid__item palm-hide one-whole desk--one-twelfth"></div><!--
-            --><div class="grid__item one-whole desk--five-sixths">
+            <div class="grid__item palm-hide lap--one-twelfth"></div><!--
+            --><div class="grid__item one-whole lap--five-sixths">
                 <div class="home__title-container">
                     <h1 class="section__page-title-text home__title">
                         <?php the_field('main_header'); ?>
@@ -15,7 +15,7 @@
     <section class="section--text home__parents">
         <div class="grid">
             <div class="grid__item palm-hide desk--one-twelfth"></div><!--
-            --><div class="grid__item desk--four-twelfths">
+            --><div class="grid__item lap--five-twelfths desk--four-twelfths">
                 <h2><?php the_field('parents_title'); ?></h2>
                 <p><?php the_field('parents_description'); ?></p>
                 <!-- <a href="#">Czytaj więcej</a> -->
@@ -27,16 +27,16 @@
 <section class="section--image home__kids">
     <div class="grid">
         <div class="grid__item palm-hide desk--one-twelfth"></div><!--
-        --><div class="grid__item one-whole desk--five-twelfths">
+        --><div class="grid__item one-whole lap--one-half desk--five-twelfths">
             <picture>
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/girl-photo--desktop.png" media="(min-width: 996px)">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/girl-photo--desktop.png" media="(min-width: 640px)">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/girl-photo--mobile.png">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/girl-photo--mobile.png">
             </picture>
         </div><!--
-        --><div class="grid__item palm-hide desk--one-twelfth"></div><!--
+        --><div class="grid__item palm-hide lap-hide desk--one-twelfth"></div><!--
 
-        --><div class="grid__item palm-hide desk--five-twelfths wide-desk--four-twelfths">
+        --><div class="grid__item palm-hide lap--one-half desk--twelfths wide-desk--four-twelfths">
             <div class="section--text">
                 <h2><?php the_field('kids_title'); ?></h2>
                 <p><?php the_field('kids_description'); ?></p>
@@ -45,7 +45,7 @@
     </div>
 </section>
 
-<section class="section--text desk-hide wide-desk-hide">
+<section class="section--text lap-hide desk-hide wide-desk-hide">
     <h2><?php the_field('kids_title'); ?></h2>
     <p><?php the_field('kids_description'); ?></p>
     <!-- <a href="#">Czytaj więcej</a> -->

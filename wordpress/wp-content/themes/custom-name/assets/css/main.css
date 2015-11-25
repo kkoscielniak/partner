@@ -1525,11 +1525,15 @@ section {
   -webkit-background-size: cover;
           background-size: cover;
 }
+@media only screen and (min-width: 640px) {
+  .section__page-title {
+    height: auto;
+    background: none;
+  }
+}
 @media only screen and (min-width: 996px) {
   .section__page-title {
     padding-top: 80px;
-    height: auto;
-    background: none;
   }
 }
 
@@ -1546,16 +1550,24 @@ section {
   text-align: center;
   text-transform: uppercase;
 }
-@media only screen and (min-width: 996px) {
+@media only screen and (min-width: 640px) {
   .section__page-title-text {
     top: 0;
     -webkit-transform: none;
         -ms-transform: none;
          -o-transform: none;
             transform: none;
+    padding-top: 80px;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 996px) {
+  .section__page-title-text {
+    padding-top: 0;
     font-size: 60px;
     line-height: 60px;
-    text-align: left;
   }
 }
 
@@ -1594,6 +1606,11 @@ section {
 
 .section--image {
   padding: 0;
+}
+@media only screen and (min-width: 640px) {
+  .section--image {
+    margin: 15px 15px;
+  }
 }
 @media only screen and (min-width: 996px) {
   .section--image {
@@ -1951,7 +1968,7 @@ footer {
     height: auto;
   }
 }
-@media only screen and (min-width: 996px) {
+@media only screen and (min-width: 640px) {
   .home .home__background-container {
     top: 0;
     width: 100%;

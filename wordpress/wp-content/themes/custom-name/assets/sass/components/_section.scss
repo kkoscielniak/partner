@@ -74,11 +74,13 @@ section {
     background-image: url('../img/page-title--mobile.png');
     background-size: cover;
 
+    @include min-screen($tablet) {
+        height: auto;
+        background: none;
+    }
+
     @include min-screen($desktop) {
         padding-top: 80px;
-        height: auto;
-
-        background: none;
     }
 }
 
@@ -91,12 +93,20 @@ section {
     text-align: center;
     text-transform: uppercase;
 
-    @include min-screen($desktop) {
+    @include min-screen($tablet) {
         @include disable-vertical-align();
 
+        padding-top: 80px;
+
+        font-size: 40px;
+        line-height: 40px;
+        text-align: left;
+    }
+
+    @include min-screen($desktop) {
+        padding-top: 0;
         font-size: 60px;
         line-height: 60px;
-        text-align: left;
     }
 }
 
@@ -134,6 +144,10 @@ section {
 
 .section--image {
     padding: 0;
+
+    @include min-screen($tablet) {
+        margin: 15px 15px;
+    }
 
     @include min-screen($desktop) {
         margin: 85px 0;
