@@ -93,7 +93,7 @@
 
 <section class="banner banner--kids-3">
     <div class="banner--secondary__content">
-        <h1 class="banner__header banner__header--secondary">Terapia zaburzeń lękowych i depresyjnych</h1>
-        <p class="banner__content section--text-small__paragraph">Prowadzimy terapię zaburzeń depresyjnych i lękowych. Pomagamy osobom, które mają problemy w relacjach, utraciły lub szukają partnera lub cierpią z bliżej nieokreślonego powodu.</p>
+        <h1 class="banner__header banner__header--secondary"><?php the_field('secondary_banner_title'); ?></h1>
+        <p class="banner__content section--text-small__paragraph"><?php the_field('secondary_banner_content'); ?></p>
     </div>
 </section>

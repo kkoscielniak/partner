@@ -18,7 +18,7 @@
             --><div class="grid__item lap--five-twelfths desk--four-twelfths">
                 <h2><?php the_field('parents_title'); ?></h2>
                 <p><?php the_field('parents_description'); ?></p>
-                <!-- <a href="#">Czytaj więcej</a> -->
+                <a href="/parents">Czytaj więcej</a>
             </div>
         </div>
     </section>
@@ -40,6 +40,7 @@
             <div class="section--text">
                 <h2><?php the_field('kids_title'); ?></h2>
                 <p><?php the_field('kids_description'); ?></p>
+                <a href="/kids">Czytaj więcej</a>
             </div>
         </div>
     </div>
@@ -48,7 +49,7 @@
 <section class="section--text lap-hide desk-hide wide-desk-hide">
     <h2><?php the_field('kids_title'); ?></h2>
     <p><?php the_field('kids_description'); ?></p>
-    <!-- <a href="#">Czytaj więcej</a> -->
+    <a href="/kids">Czytaj więcej</a>
 </section>
 
 <section class="section--text section--bg home__adults">
@@ -57,7 +58,7 @@
         --><div class="grid__item one-whole desk--four-twelfths">
             <h2><?php the_field('adults_title'); ?></h2>
             <p><?php the_field('adults_description'); ?></p>
-            <!-- <a href="#">Czytaj więcej</a> -->
+            <a href="/adults">Czytaj więcej</a>
         </div>
 </section>
 

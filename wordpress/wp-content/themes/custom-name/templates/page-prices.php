@@ -1,6 +1,8 @@
 <section class="banner banner--prices">
     <div class="banner-title-container">
-        <h1 class="banner__header"><?php the_title(); ?></h1>
+        <div class="banner__main-content">
+            <h1 class="banner__header"><?php the_title(); ?></h1>
+        </div>
     </div>
     <!-- @todo -->
     <div class="banner-nfz-logo-container banner-nfz-logo-container--mobile">

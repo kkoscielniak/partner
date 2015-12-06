@@ -16,7 +16,7 @@
                     <?php if (function_exists( 'contact_detail' )) {
                         contact_detail( 'address_cracow' );
                     } ?><br/>
-                    <a href="tel:<?php if (function_exists( 'contact_detail' )) {
+                    tel: <a href="tel:<?php if (function_exists( 'contact_detail' )) {
                         contact_detail( 'phone_cracow' );
                     } ?>"><?php if (function_exists( 'contact_detail' )) {
                         contact_detail( 'phone_cracow' );
@@ -39,13 +39,11 @@
                     <?php if (function_exists( 'contact_detail' )) {
                         contact_detail( 'address_gliwice' );
                     } ?><br/>
-                    <a href="tel:<?php if (function_exists( 'contact_detail' )) {
+                   tel: <a href="tel:<?php if (function_exists( 'contact_detail' )) {
                         contact_detail('phone_gliwice');
-                    } ?>">
-                        <?php if (function_exists( 'contact_detail' )) {
+                    } ?>"><?php if (function_exists( 'contact_detail' )) {
                             contact_detail('phone_gliwice');
-                        } ?>
-                    </a><br/>
+                        } ?></a><br/>
                     lub<br/><a href="tel:<?php if (function_exists( 'contact_detail' )) {
                         contact_detail('phone_gliwice_2');
                     } ?>">

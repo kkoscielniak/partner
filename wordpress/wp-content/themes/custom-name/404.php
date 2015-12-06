@@ -1,13 +1,10 @@
-<?php get_template_part('templates/page', 'header'); ?>
 
-<div class="alert alert-warning">
-  <?php _e('Sorry, but the page you were trying to view does not exist.', 'roots'); ?>
-</div>
 
-<p><?php _e('It looks like this was the result of either:', 'roots'); ?></p>
-<ul>
-  <li><?php _e('a mistyped address', 'roots'); ?></li>
-  <li><?php _e('an out-of-date link', 'roots'); ?></li>
-</ul>
-
-<?php get_search_form(); ?>
+<section class="banner banner--kids">
+    <div class="banner__main-content">
+        <h1 class="banner__header">Strony nie odnaleziono</h1>
+        <ul id="menu-additional" class="nav navbar-nav additional-nav">
+            <li class="menu-dzieci"><a href="/">Powrót do strony głównej</a></li>
+        </ul>
+    </div>
+</section>

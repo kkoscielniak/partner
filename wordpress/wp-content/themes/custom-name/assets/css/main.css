@@ -1683,6 +1683,11 @@ section {
     font-size: 18px;
   }
 }
+.section--text a {
+  display: block;
+  margin-top: 15px;
+  text-decoration: none;
+}
 
 .section--text-small {
   text-align: center;
@@ -1829,6 +1834,12 @@ section {
 }
 .banner--secondary__content .banner__header {
   color: #53524f;
+  font-size: 30px;
+}
+@media only screen and (min-width: 996px) {
+  .banner--secondary__content .banner__header {
+    font-size: 50px;
+  }
 }
 .banner--secondary__content .banner__header:after {
   content: '';
@@ -1843,6 +1854,12 @@ section {
 }
 .banner--secondary__content .banner__content {
   padding-top: 20px;
+  margin-top: 40px;
+}
+@media only screen and (min-width: 640px) {
+  .banner--secondary__content .banner__content {
+    margin-top: 70px;
+  }
 }
 
 .banner--team {
@@ -2140,7 +2157,7 @@ footer {
   border-radius: 50%;
 }
 .team .team__name {
-  height: 40px;
+  min-height: 40px;
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;

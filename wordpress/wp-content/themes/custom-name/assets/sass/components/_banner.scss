@@ -58,6 +58,11 @@
 
     .banner__header {
         color: $base-font-color;
+        font-size: 30px;
+
+        @include min-screen($desktop) {
+            font-size: 50px;
+        }
 
         &:after {
             content: '';
@@ -74,6 +79,12 @@
 
     .banner__content {
         padding-top: 20px;
+
+        margin-top: 40px;
+
+        @include min-screen($tablet) {
+            margin-top: 70px;
+        }
     }
 }
 
