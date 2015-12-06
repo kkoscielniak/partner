@@ -1475,13 +1475,16 @@ header {
   color: #ffc299;
 }
 .nav-container .navbar-nav li a {
+  display: block;
   text-decoration: none;
   font-size: 30px;
   line-height: 46px;
   letter-spacing: 0;
+  margin-bottom: 10px;
 }
 @media only screen and (min-width: 996px) {
   .nav-container .navbar-nav li a {
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.15em;
@@ -1817,6 +1820,16 @@ section {
     line-height: 40px;
   }
 }
+.banner .banner__content {
+  margin: 21px auto 0;
+  padding: 0 15px;
+}
+@media only screen and (min-width: 640px) {
+  .banner .banner__content {
+    max-width: 500px;
+    margin: 60px auto;
+  }
+}
 
 .banner--secondary__content {
   position: relative;
@@ -1948,6 +1961,25 @@ section {
   color: #FFFFFF;
 }
 .banner--parents-2 .banner__header:after {
+  background-color: #FFFFFF;
+}
+
+.banner--about {
+  background-image: url("../img/banner-about.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  color: #FFFFFF;
+}
+@media only screen and (min-width: 996px) {
+  .banner--about {
+    min-height: 450px;
+  }
+}
+.banner--about .banner__header {
+  color: #FFFFFF;
+}
+.banner--about .banner__header:after {
   background-color: #FFFFFF;
 }
 
@@ -2486,6 +2518,147 @@ body.adults {
 @media only screen and (min-width: 996px) {
   .prices .section-content {
     text-align: left;
+  }
+}
+
+div.about {
+  background-color: #FFFFFF;
+}
+@media only screen and (max-width: 639px) {
+  div.about .section-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+div.about .section-tagline {
+  padding: 0 15px;
+  text-align: center;
+  margin: 20px auto 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 640px) {
+  div.about .section-tagline {
+    max-width: 700px;
+  }
+}
+div.about .about__partner {
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
+}
+@media only screen and (min-width: 640px) {
+  div.about .about__partner {
+    margin-top: 120px;
+  }
+}
+div.about .about__partner:before {
+  background: #53524f;
+  position: absolute;
+  height: 10px;
+  width: 140px;
+  top: -40px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 640px) {
+  div.about .about__partner:before {
+    content: '';
+  }
+}
+div.about .about__partner .about__partner-photo {
+  margin: 30px auto;
+  border-radius: 50%;
+  max-width: 330px;
+  width: 100%;
+  height: auto;
+}
+@media only screen and (min-width: 640px) {
+  div.about .about__partner .about__partner-photo {
+    margin: 0;
+  }
+}
+div.about .about__partner .about__partner-name {
+  margin-top: 30px;
+  font-size: 30px;
+  letter-spacing: 0.15em;
+  line-height: 35px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+div.about .about__partner .about__partner-content {
+  margin-top: 30px;
+}
+div.about .about__partner a {
+  display: block;
+  margin-top: 30px;
+  font-size: 18px;
+}
+div.about .about__table {
+  margin-top: 30px;
+  padding: 0 15px;
+  background-color: #ffefdd;
+}
+@media only screen and (min-width: 640px) {
+  div.about .about__table {
+    margin-top: 160px;
+    padding: 80px 0 130px;
+  }
+}
+div.about .about__table .icon {
+  display: block;
+  margin: 30px auto 0;
+  width: 160px;
+  height: 160px;
+}
+@media only screen and (min-width: 640px) {
+  div.about .about__table .icon {
+    margin: 0 auto;
+  }
+}
+div.about .about__table .about__table-columns {
+  margin-top: 50px;
+}
+@media only screen and (min-width: 640px) {
+  div.about .about__table .about__table-columns {
+    margin-top: 100px;
+  }
+}
+div.about .about__table .about__table-columns p {
+  display: block;
+  margin-top: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 640px) {
+  div.about .about__table .about__table-columns p {
+    margin-top: 80px;
+  }
+}
+div.about .about__table .about__table-columns ul {
+  padding-left: 20px;
+  height: 120px;
+}
+@media only screen and (min-width: 996px) {
+  div.about .about__table .about__table-columns ul {
+    height: 80px;
+  }
+}
+div.about .about__table .about__table-columns a {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 16px;
+}
+div.about .kids-dyslexia {
+  margin-top: 0;
+  height: 370px;
+}
+@media only screen and (min-width: 640px) {
+  div.about .kids-dyslexia {
+    height: 255px;
   }
 }
 

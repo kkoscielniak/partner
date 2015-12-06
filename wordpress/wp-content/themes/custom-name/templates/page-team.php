@@ -1,6 +1,7 @@
 <section class="banner banner--team">
     <div class="banner__main-content">
         <h1 class="banner__header">Zespół</h1>
+        <p class="banner__content">Zespół</p>
     </div>
 </section>
 

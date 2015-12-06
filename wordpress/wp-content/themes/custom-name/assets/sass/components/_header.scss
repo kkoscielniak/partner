@@ -70,12 +70,15 @@ header {
             }
 
             a {
+                display: block;
                 text-decoration: none;
                 font-size: 30px;
                 line-height: 46px;
                 letter-spacing: 0;
+                margin-bottom: 10px;
 
                 @include min-screen($desktop) {
+                    margin-bottom: 0;
                     font-size: 16px;
                     line-height: 22px;
                     letter-spacing: 0.15em;

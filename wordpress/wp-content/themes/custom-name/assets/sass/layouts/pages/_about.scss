@@ -1,0 +1,152 @@
+div.about { // div is here to prevent targeting the body class
+    background-color: $white;
+
+    .section-title {
+        @include max-screen($tablet - 1) {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+
+    .section-tagline {
+        padding: 0 15px;
+        text-align: center;
+        margin: 20px auto 0;
+
+        font-weight: 700;
+        text-transform: uppercase;
+
+        @include min-screen($tablet) {
+            max-width: 700px;
+        }
+    }
+
+    .about__partner {
+        position: relative;
+        margin-top: 50px;
+        text-align: center;
+
+        @include min-screen($tablet) {
+            margin-top: 120px;
+        }
+
+        &:before {
+            background: $base-font-color;
+            position: absolute;
+            height: 10px;
+            width: 140px;
+            top: -40px;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+
+            @include min-screen($tablet) {
+                content: '';
+            }
+        }
+
+        .about__partner-photo {
+            margin: 30px auto;
+            border-radius: 50%;
+
+            max-width: 330px;
+            width: 100%;
+            height: auto;
+
+            @include min-screen($tablet) {
+                margin: 0;
+            }
+        }
+
+        .about__partner-name {
+            margin-top: 30px;
+            font-size: 30px;
+            letter-spacing: 0.15em;
+            line-height: 35px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .about__partner-content {
+            margin-top: 30px;
+        }
+
+        a {
+            display: block;
+            margin-top: 30px;
+            font-size: 18px;
+        }
+
+    }
+
+    .about__table {
+        margin-top: 30px;
+        padding: 0 15px;
+
+        background-color: $bg-color;
+
+        @include min-screen($tablet) {
+            margin-top: 160px;
+            padding: 80px 0 130px;
+        }
+
+        .icon {
+            display: block;
+            margin: 30px auto 0;
+
+            width: 160px;
+            height: 160px;
+
+            @include min-screen($tablet) {
+                margin: 0 auto;
+            }
+        }
+
+        .about__table-columns {
+            margin-top: 50px;
+
+            @include min-screen($tablet) {
+                margin-top: 100px;
+            }
+
+            p {
+                display: block;
+                margin-top: 40px;
+                font-weight: 700;
+                text-transform: uppercase;
+
+                @include min-screen($tablet) {
+                    margin-top: 80px;
+                }
+            }
+
+            ul {
+                padding-left: 20px;
+                height: 120px;
+
+                @include min-screen($desktop) {
+                    height: 80px;
+                }
+            }
+
+            a {
+                display: block;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                text-align: center;
+                font-size: 16px;
+            }
+        }
+
+    }
+
+    .kids-dyslexia {
+        margin-top: 0;
+        height: 370px;
+
+        @include min-screen($tablet) {
+            height: 255px;
+        }
+    }
+
+}

@@ -46,6 +46,16 @@
             }
         }
     }
+
+    .banner__content {
+        margin: 21px auto 0;
+        padding: 0 15px;
+
+        @include min-screen($tablet) {
+            max-width: 500px;
+            margin: 60px auto;
+        }
+    }
 }
 
 .banner--secondary__content {
@@ -171,6 +181,25 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: $white;
+
+    .banner__header {
+        color: $white;
+
+        &:after {
+            background-color: $white;
+        }
+    }
+}
+
+.banner--about {
+    background-image: url('../img/banner-about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+
+    @include min-screen($desktop) {
+        min-height: 450px;
+    }
 
     .banner__header {
         color: $white;
