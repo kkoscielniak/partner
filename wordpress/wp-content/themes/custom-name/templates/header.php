@@ -2,7 +2,7 @@
     <div class="header__logo">
         <a href="/">
             <picture>
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/logo--desktop.png" media="(min-width: 996px)">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/logo--desktop.png" media="(min-width: 1200px)">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/logo-mobile.png">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-mobile.png" alt="Partner Logo">
             </picture>

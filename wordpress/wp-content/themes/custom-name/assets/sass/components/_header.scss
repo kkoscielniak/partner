@@ -79,8 +79,13 @@ header {
 
                 @include min-screen($desktop) {
                     margin-bottom: 0;
+                    padding-left: 15px;
                     font-size: 16px;
                     line-height: 22px;
+                    letter-spacing: 0em;
+                }
+
+                @include min-screen($wide-desktop) {
                     letter-spacing: 0.15em;
                     padding-left: 30px;
                 }
