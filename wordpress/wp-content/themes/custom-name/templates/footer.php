@@ -7,7 +7,7 @@
         <div class="grid">
             <div class="grid__item one-whole lap--one-quarter">
                 <div class="footer__image-container">
-                    <img class="footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/img/footer-image-1--mobile.png">
+                    <img class="footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/img/smok_wawelski.png">
                 </div>
             </div><!--
             --><div class="grid__item one-whole lap--one-quarter">
@@ -30,7 +30,7 @@
             </div><!--
             --><div class="grid__item one-whole lap--one-quarter">
                 <div class="footer__image-container">
-                    <img class="footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/img/footer-image-2--mobile.png">
+                    <img class="footer__image" src="<?php echo get_template_directory_uri(); ?>/assets/img/radiostacja.png">
                 </div>
             </div><!--
             --><div class="grid__item one-whole lap--one-quarter">
@@ -44,7 +44,7 @@
                     } ?>"><?php if (function_exists( 'contact_detail' )) {
                             contact_detail('phone_gliwice');
                         } ?></a><br/>
-                    lub<br/><a href="tel:<?php if (function_exists( 'contact_detail' )) {
+                    lub <a href="tel:<?php if (function_exists( 'contact_detail' )) {
                         contact_detail('phone_gliwice_2');
                     } ?>">
                         <?php if (function_exists( 'contact_detail' )) {
@@ -76,7 +76,6 @@
             --><div class="grid__item lap--ten-twelfths desk--five-twelfths">
                 <div class="footer__copyright">
                     <a href="/cookies">Cookies</a>
-                    <p>Designed by Ewa Kwiatek</p>
                 </div>
             </div>
         </div>
