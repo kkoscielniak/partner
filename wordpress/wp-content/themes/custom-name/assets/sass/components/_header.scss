@@ -76,6 +76,7 @@ header {
                 line-height: 46px;
                 letter-spacing: 0;
                 margin-bottom: 10px;
+                color: $white;
 
                 @include min-screen($desktop) {
                     margin-bottom: 0;
