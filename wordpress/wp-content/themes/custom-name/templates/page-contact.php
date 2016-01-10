@@ -5,7 +5,7 @@
         <div class="grid">
             <div class="grid__item palm-hide desk--one-twelfth"></div><!--
             --><div class="grid__item desk--one-quarter">
-                <p class="contact__column-headline">Kraków</p>
+                <p class="contact__column-headline">Gliwice</p>
                 <p class="contact__address">
                     <?php if (function_exists( 'contact_detail' )) {
                         contact_detail( 'address_cracow' );
@@ -23,7 +23,7 @@
                 </p>
             </div><!--
             --><div class="grid__item desk--one-quarter">
-                <p class="contact__column-headline">Gliwice</p>
+                <p class="contact__column-headline">Kraków</p>
                 <p class="contact__address">
                     <?php if (function_exists( 'contact_detail' )) {
                         contact_detail( 'address_gliwice' );
