@@ -1,16 +1,15 @@
 <section class="banner banner--about">
     <div class="banner__main-content">
         <h1 class="banner__header">O nas</h1>
-        <p class="banner__content">Pomagamy innym i prowadzimy szkolenia od ponad 20-stu lat. Właścicielem i dyrektorem placówki jest dr Agnieszka Wilczyńska, psycholog, pedagog, psychoterapeuta, autorka książek psychologicznych i kilkudziesięciu psychologicznych artykułów. Działamy w dwóch województwach i trzech miastach: w Krakowie, w Zakopanem i w Gliwicach.</p>
+        <p class="banner__content"><?php the_field('banner_content'); ?></p>
     </div>
 </section>
 
 <div class="about">
 
     <div class="about__header">
-        <h2 class="section-title section-title--center">Współpraca<br/>międzynarodowa</h2>
-        <p class="section-tagline">Do grona naszych ścisłych współpracowników należą najznakomitsze postacie światowej psychologii
-i uznani międzynarodowi specjaliści, w tym:</h2>
+        <h2 class="section-title section-title--center"><?php the_field('about_header'); ?></h2>
+        <p class="section-tagline"><?php the_field('about_tagline'); ?></h2>
     </div>
 
     <section class="about__partner">
@@ -19,10 +18,10 @@ i uznani międzynarodowi specjaliści, w tym:</h2>
         <div class="about__partner-content">
             <div class="grid grid--center">
                 <div class="grid__item lap--one-third">
-                    <p>Profesor Uniwersytetu Stanforda, autor najpoczytniejszych książek psychologicznych Dr. Philip Zimbardo  jest uznawany za “głos i twarz współczesnej psychologii”. Swoją popularność zawdzięcza wystąpieniom w mediach i świetnie sprzedającym się książkom z dziedziny psychologii. </p>
+                    <p><?php the_field('zimbardo_left'); ?></p>
                 </div><!--
                 --><div class="grid__item lap--one-third">
-                    <p>Nasza Poradnia oraz Biuro Szkoleń Partner we współpracy z Profesorem prowadzi Projekt Bohaterskiej Wyobraźni. Jesteśmy jedynym i wyłącznym posiadaczem licencji na ten Projekt, współpracujemy z Fundacją Zimbardo Youth Center szkoląc Trenerów i Nauczycieli w całej Polsce:</p>
+                    <p><?php the_field('zimbardo_right'); ?></p>
                 </div>
             </div>
         </div>
@@ -34,13 +33,10 @@ i uznani międzynarodowi specjaliści, w tym:</h2>
         <div class="about__partner-content">
             <div class="grid grid--center">
                 <div class="grid__item lap--one-third">
-                    <p>Dr De Meester jest autorem europejskiego patentu PCT WO (EP07102973.0) "Method For The Prevention Of Chronic Inflammation-Associated Degenerative Diseases" ("Metoda zapobiegania chronicznym stanom zapalnym związanym z chorobami degeneracyjnymi"), który jest wynikiem 20-letniej pracy na polu badania lipidów i kwasów tłuszczowych, </p>
+                    <p><?php the_field('meester_left'); ?></p>
                 </div><!--
                 --><div class="grid__item lap--one-third">
-                    <p> ich fizjologicznego wpływu na człowieka oraz istotności ich wyważonej proporcji
-w  diecie i krwi (Status Omega-6). Nasi klienci stosują się do jego zaleceń w celu uniknięcia zachorowania na choroby degeneracyjne. Organizujemy warsztaty
-i szkolenia oraz indywidualne konsultacje dotyczące zapobiegania zachorowaniom.
-i starzeniu się.</p>
+                    <p><?php the_field('meester_right'); ?></p>
                 </div>
             </div>
         </div>
@@ -52,7 +48,7 @@ i starzeniu się.</p>
         <div class="about__partner-content">
             <div class="grid grid--center">
                 <div class="grid__item lap--two-thirds">
-                    <p>Międzynarodowy ekspert, psycholog kliniczny w obszarze łagodzenia psychologicznych następstw terroryzmu i innych poważnych katastrof. Pracuje ze społecznościami dotkniętych traumatycznymi wydarzeniami w  różnych strefach świata. Organizujemy warsztaty i szkolenia dotyczące radzenia sobie z sytuacjami traumatycznymi, przewlekłym stresem u dzieci i młodzieży, przemocą.</p>
+                    <p><?php the_field('beerger_left'); ?></p>
                 </div>
             </div>
         </div>
@@ -64,42 +60,45 @@ i starzeniu się.</p>
 
     <section class="about__table">
         <div class="about__header">
-            <h2 class="section-title section-title--center">Nasza misja</h2>
-            <p class="section-tagline">Wspieramy pełnen troski i miłości rozwój człowieka z poszanowaniem siebie i innych ludzi. </h2>
+            <h2 class="section-title section-title--center"><?php the_field('our_mission'); ?></h2>
+            <p class="section-tagline"><?php the_field('our_mission_content'); ?></h2>
         </div>
 
         <section class="about__table-columns">
             <div class="grid">
                 <div class="grid__item lap--one-third">
                     <img class="icon" src="<?php echo get_template_directory_uri();?>/assets/img/footer-image-1--mobile.png">
-                    <p>Pomagamy dorosłemu:</p>
-                    <ul>
+                    <p><?php the_field('helping_adults_title'); ?></p>
+                    <!-- <ul>
                         <li>odkrywać i rozwijać potencjał własny, </li>
                         <li>zmagać się z trudnościami życia,</li>
                         <li>zachować zdrowie, odkrywać satysfakcję i radość z życia,</li>
                         <li>dobrać życiowego partnera.</li>
-                    </ul>
-                    <a href="/adults">Czytaj więcej</a>
+                    </ul> -->
+                    <?php the_field('helping_adults'); ?>
+                    <a href="/adults"><?php the_field('read_more'); ?></a>
                 </div><!--
                 --><div class="grid__item lap--one-third">
                     <img class="icon" src="<?php echo get_template_directory_uri();?>/assets/img/footer-image-2--mobile.png">
-                    <p>Pomagamy rodzicom:</p>
-                    <ul>
+                    <p><?php the_field('helping_parents_title'); ?></p>
+                    <!-- <ul>
                         <li>rozumieć i wspierać rozwój ich dzieci,</li>
                         <li>wspomóc proces wychowania - jak  być dobrym i skutecznym Rodzicem,</li>
                         <li>rozwiązywać problemy dorastania.</li>
-                    </ul>
-                    <a href="/parents">Czytaj więcej</a>
+                    </ul> -->
+                    <?php the_field('helping_parents'); ?>
+                    <a href="/parents"><?php the_field('read_more'); ?></a>
                 </div><!--
                 --><div class="grid__item lap--one-third">
                     <img class="icon" src="<?php echo get_template_directory_uri();?>/assets/img/footer-image-3.png">
                     <p>Pomagamy Dziecku i Nastolatkowi:</p>
-                    <ul>
+                    <!-- <ul>
                         <li>rozwijać się w poszanowaniu siebie i innych,</li>
                         <li>wzmacniać zasoby i pozytywne funkcjonowanie w środowisku szkolnym i rodzinnym,</li>
                         <li>budować relacje z innymi ludźmi.</li>
-                    </ul>
-                    <a href="/kids">Czytaj więcej</a>
+                    </ul> -->
+                    <?php the_field('helping_kids'); ?>
+                    <a href="/kids"><?php the_field('read_more'); ?></a>
                 </div>
             </div>
         </section>
@@ -107,8 +106,10 @@ i starzeniu się.</p>
 
     <section class="kids-dyslexia">
         <div class="kids-dyslexia__content">
-            <h3>Posiadamy Certyfikat ISO nr 463/B/08/2012/J/R-(Z/1/2014)<br/>oraz Certyfikat Jakości ISO normy PN-EN ISO 9001:2009</h3>
-            <p>w zakresie świadczenia usług medycznych z zakresu psychologii, psychiatrii, <br/>pedagogiki, logopedii, terapii leczenia uzależnień i współpracy <br/>pedagoga dla dzieci i młodzieży.</p>
+            <!-- <h3>Posiadamy Certyfikat ISO nr 463/B/08/2012/J/R-(Z/1/2014)<br/>oraz Certyfikat Jakości ISO normy PN-EN ISO 9001:2009</h3>
+            <p>w zakresie świadczenia usług medycznych z zakresu psychologii, psychiatrii, <br/>pedagogiki, logopedii, terapii leczenia uzależnień i współpracy <br/>pedagoga dla dzieci i młodzieży.</p> -->
+            <h3><?php the_field('certificate_title'); ?></h3>
+            <p><?php the_field('certificate_content'); ?></p>
         </div>
     </section>
 </div>
