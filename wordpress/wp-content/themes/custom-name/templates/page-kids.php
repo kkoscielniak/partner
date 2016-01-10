@@ -69,19 +69,21 @@
     </div>
 </section>
 
-<section class="kids__readiness banner--kids-2">
-    <div class="readiness__content">
-        <h2>Badanie gotowości szkolnej u dzieci przedszkolnych</h2>
-        <p>Prowadzimy specjalistyczne badania w celu określenia czy dziecko jest gotowe do podjęcia nauki w pierwszej klasie szkoły podstawowej. Jako Poradnia Psychologiczno-Pedagogiczna wystawiamy opinie uznawane przez szkoły.</p>
-    </div>
-</section>
+<div class="readiness--white">
+    <section class="kids__readiness banner--kids-2">
+        <div class="readiness__content">
+            <h2>Badanie gotowości szkolnej u dzieci przedszkolnych</h2>
+            <p>Prowadzimy specjalistyczne badania w celu określenia czy dziecko jest gotowe do podjęcia nauki w pierwszej klasie szkoły podstawowej. Jako Poradnia Psychologiczno-Pedagogiczna wystawiamy opinie uznawane przez szkoły.</p>
+        </div>
+    </section>
 
-<section class="section--transparent">
-    <h2>Diagnoza i zapobieganie<br/>trudnościom szkolnych dzieci</h2>
-    <h3>Dysleksja i dysgrafia</h3>
-    <p>Przeprowadzamy diagnozę dysfunkcji szkolnych –za pomocą specjalistycznych badań diagnostycznych: psychologicznych, pedagogicznych, logopedycznych celem rozpoznania a następnie korygowania trudności w nauce. Wystawiamy opinie do szkół i uczelni wyższych zawierającą informacje o indywidualnych trudnościach dzieci i młodzieży oraz o dostosowaniu wymagań edukacyjnych wynikających z programu nauczania do indywidualnych potrzeb ucznia, u którego stwierdzono specyficzne trudności w uczeniu się, uniemożliwiające sprostanie tym wymaganiom - na podstawie Ustawy o zmianie ustawy o systemie oświaty z dnia 23.08.2001 – Dz. U. 111, poz. 1194, art. 71b, ust. 3a i 3b.</p>
-</p>
-</section>
+    <section class="section--transparent">
+        <h2>Diagnoza i zapobieganie<br/>trudnościom szkolnych dzieci</h2>
+        <h3>Dysleksja i dysgrafia</h3>
+        <p>Przeprowadzamy diagnozę dysfunkcji szkolnych –za pomocą specjalistycznych badań diagnostycznych: psychologicznych, pedagogicznych, logopedycznych celem rozpoznania a następnie korygowania trudności w nauce. Wystawiamy opinie do szkół i uczelni wyższych zawierającą informacje o indywidualnych trudnościach dzieci i młodzieży oraz o dostosowaniu wymagań edukacyjnych wynikających z programu nauczania do indywidualnych potrzeb ucznia, u którego stwierdzono specyficzne trudności w uczeniu się, uniemożliwiające sprostanie tym wymaganiom - na podstawie Ustawy o zmianie ustawy o systemie oświaty z dnia 23.08.2001 – Dz. U. 111, poz. 1194, art. 71b, ust. 3a i 3b.</p>
+    </p>
+    </section>
+</div>
 
 <section class="kids-dyslexia">
     <div class="kids-dyslexia__content">

@@ -1,7 +1,7 @@
 <div class="home__background-container">
     <section class="section__page-title">
         <div class="grid">
-            <div class="grid__item palm-hide lap--one-twelfth"></div><!--
+            <div class="grid__item palm-hide lap-hide desk--one-twelfth"></div><!--
             --><div class="grid__item one-whole lap--five-sixths">
                 <div class="home__title-container">
                     <h1 class="section__page-title-text home__title">

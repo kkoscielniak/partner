@@ -40,6 +40,13 @@ a {
     font-size: 14px;
     letter-spacing: 0.15em;
     text-transform: underline;
+
+    transition: all 100ms ease-in;
+
+
+    &:hover {
+        color: $nav-hover;
+    }
 }
 
 img {

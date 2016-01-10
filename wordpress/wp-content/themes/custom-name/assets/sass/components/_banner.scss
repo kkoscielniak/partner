@@ -44,6 +44,13 @@
                 font-size: 40px;
                 line-height: 40px;
             }
+
+            &:after {
+                @include min-screen($desktop){
+                    top: 75px;
+                    margin-top: 0;
+                }
+            }
         }
     }
 

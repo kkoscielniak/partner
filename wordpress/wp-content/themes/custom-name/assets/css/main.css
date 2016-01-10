@@ -1389,6 +1389,12 @@ a {
   font-size: 14px;
   letter-spacing: 0.15em;
   text-transform: underline;
+  -webkit-transition: all 100ms ease-in;
+       -o-transition: all 100ms ease-in;
+          transition: all 100ms ease-in;
+}
+a:hover {
+  color: #ffc299;
 }
 
 img {
@@ -1481,6 +1487,7 @@ header {
   line-height: 46px;
   letter-spacing: 0;
   margin-bottom: 10px;
+  color: #FFFFFF;
 }
 @media only screen and (min-width: 996px) {
   .nav-container .navbar-nav li a {
@@ -1489,6 +1496,7 @@ header {
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0em;
+    color: #53524f;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -1824,6 +1832,12 @@ section {
   .banner .banner__header.banner__header--secondary {
     font-size: 40px;
     line-height: 40px;
+  }
+}
+@media only screen and (min-width: 996px) {
+  .banner .banner__header.banner__header--secondary:after {
+    top: 75px;
+    margin-top: 0;
   }
 }
 .banner .banner__content {
@@ -2192,6 +2206,7 @@ footer {
   text-align: center;
 }
 .team .team__photo {
+  max-width: 160px;
   border-radius: 50%;
 }
 .team .team__name {
@@ -2317,6 +2332,14 @@ body.adults {
 }
 
 @media only screen and (min-width: 996px) {
+  .readiness--white {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 75px;
+  }
+}
+
+@media only screen and (min-width: 996px) {
   .kids__readiness {
     height: 433px;
   }
@@ -2338,6 +2361,7 @@ body.adults {
 .kids__readiness .readiness__content p {
   font-size: 18px;
   line-height: 24px;
+  margin-top: 20px;
 }
 @media only screen and (min-width: 996px) {
   .kids__readiness .readiness__content p {
@@ -2359,7 +2383,6 @@ body.adults {
 }
 @media only screen and (min-width: 996px) {
   .kids-dyslexia {
-    margin-top: 75px;
     height: 255px;
   }
 }
