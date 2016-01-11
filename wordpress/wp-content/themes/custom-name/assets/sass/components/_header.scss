@@ -80,7 +80,7 @@ header {
                 display: block;
                 text-decoration: none;
                 font-size: 30px;
-                line-height: 46px;
+                line-height: 40px;
                 letter-spacing: 0;
                 margin-bottom: 10px;
                 color: $white;
@@ -101,6 +101,21 @@ header {
             }
 
             .dropdown-menu {
+
+                list-style-type: none;
+                margin-left: 0;
+                padding: 0;
+
+                a {
+                    color: $white;
+                    font-size: 20px;
+                    line-height: 26px;
+
+                    @include min-screen($desktop) {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
 
                 @include min-screen($desktop) {
                     position: absolute;
@@ -172,21 +187,21 @@ header {
             display: block;
             position: relative;
             width: 100%;
-            height: 1px;
+            height: 3px;
             margin-bottom: 10px;
-            background-color: $black;
+            background-color: $base-font-color;
 
             transition: all 250ms ease-in;
 
             .menu-open & {
 
                 &:first-of-type {
-                    top: 10px;
+                    top: 12px;
                     transform: rotate(45deg);
                 }
 
                 &:last-of-type {
-                    top: -11px;
+                    top: -13px;
                     transform: rotate(-45deg);
                 }
             }
@@ -195,19 +210,22 @@ header {
 }
 
 .znany-lekarz-trigger {
-    @include min-screen($desktop) {
-        margin-left: 30px;
-    }
 
     display: inline-block;
+    color: $white;
     font-family: 'Lovelo Black';
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
-    color: #ffc299;
     text-decoration: underline;
     text-transform: uppercase;
 
     &:hover {
         color: #f39a91;
+    }
+
+    @include min-screen($desktop) {
+        margin-left: 30px;
+        font-size: 16px;
+        color: #ffc299;
     }
 }
