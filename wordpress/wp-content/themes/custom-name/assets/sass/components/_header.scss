@@ -69,6 +69,13 @@ header {
                 }
             }
 
+            &.dropdown {
+                @include min-screen($desktop) {
+                    position: relative;
+                    z-index: 100;
+                }
+            }
+
             a {
                 display: block;
                 text-decoration: none;
@@ -90,6 +97,50 @@ header {
                 @include min-screen($wide-desktop) {
                     letter-spacing: 0.15em;
                     padding-left: 30px;
+                }
+            }
+
+            .dropdown-menu {
+
+                @include min-screen($desktop) {
+                    position: absolute;
+
+                    left: 0;
+                    right: 0;
+                    margin-left: 10px;
+                    margin-right: -20px;
+                    padding: 10px 0 0;
+
+                    background-color: $bg-color;
+
+                    text-align: center;
+
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all 100ms ease-in;
+
+                    li {
+                        display: block;
+
+                        a {
+                            padding-left: 0;
+                            color: $base-font-color;
+                            line-height: 36px;
+                            transition: all 100ms ease-in;
+
+                            &:hover {
+                                color: $nav-hover;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:hover .dropdown-menu {
+
+                @include min-screen($desktop) {
+                    visibility: visible;
+                    opacity: 1;
                 }
             }
         }
@@ -143,8 +194,20 @@ header {
     }
 }
 
-    .znany-lekarz-trigger {
-        @include min-screen($desktop) {
-            margin-left: 30px;
-        }
+.znany-lekarz-trigger {
+    @include min-screen($desktop) {
+        margin-left: 30px;
     }
+
+    display: inline-block;
+    font-family: 'Lovelo Black';
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffc299;
+    text-decoration: underline;
+    text-transform: uppercase;
+
+    &:hover {
+        color: #f39a91;
+    }
+}
