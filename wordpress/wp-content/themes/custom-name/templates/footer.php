@@ -64,19 +64,13 @@
     <?php } ?>
 
     <div class="footer__bottom">
-        <div class="grid">
-            <div class="grid__item desk--three-twelfths"></div><!--
-            --><div class="grid__item lap--one-twelfth">
-                <div class="footer__social-media">
-                    <a href="https://www.facebook.com/poradnia.partner/">
-                        <img class="footer__social-media-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook--mobile.png">
-                    </a>
-                </div>
-            </div><!--
-            --><div class="grid__item lap--ten-twelfths desk--five-twelfths">
-                <div class="footer__copyright">
-                    <a href="/cookies">Cookies</a>
-                </div>
+        <div class="footer__social-media">
+            <a href="https://www.facebook.com/poradnia.partner/" class="fb_link">
+                <img class="footer__social-media-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook--mobile.png">
+            </a>
+
+            <div class="footer__copyright">
+                <a href="/cookies">Cookies</a>
             </div>
         </div>
     </div>

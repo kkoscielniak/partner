@@ -60,11 +60,18 @@ footer {
 }
 
 .footer__social-media {
+    width: 100%;
     margin-top: 30px;
+
+    text-align: center;
 
     @include min-screen($tablet) {
         margin-top: 15px;
         display: inline-block;
+    }
+
+    .fb_link {
+        color: $bg-color;
     }
 
     .footer__social-media-icon {
@@ -87,6 +94,10 @@ footer {
 
     @include min-screen($tablet) {
         display: inline-block;
+
+        vertical-align: top;
+        margin-top: 12px;
+        margin-left: 20px;
     }
 
     a {
