@@ -29,7 +29,7 @@
     </section>
 
     <section class="about__partner">
-        <p class="about__partner-name">Dr. Fabien de<br/>Meester</p>
+        <p class="about__partner-name">Dr Fabien de<br/>Meester</p>
         <div class="about__partner-content">
             <div class="grid grid--center">
                 <div class="grid__item lap--one-third">
@@ -44,7 +44,7 @@
 
     <section class="about__partner">
         <img class="about__partner-photo" src="<?php echo get_template_directory_uri();?>/assets/img/berger.jpg">
-        <p class="about__partner-name">Dr. Rony <br/>Berger</p>
+        <p class="about__partner-name">Dr Rony <br/>Berger</p>
         <div class="about__partner-content">
             <div class="grid grid--center">
                 <div class="grid__item lap--two-thirds">
