@@ -81,7 +81,6 @@ define('WPLANG', '');
 define('WP_DEBUG', true);
 
 define('WP_ENV', 'development');
-
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
