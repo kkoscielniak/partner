@@ -5,10 +5,11 @@
 </section>
 
 <?php if (have_rows('repeater')) {
+    $i = 0;
     while (have_rows('repeater')) {
         the_row();
-        ?>
 
+        if ($i%2 == 0) { ?>
             <section class="section--image home__kids">
                 <div class="grid">
                     <div class="grid__item palm-hide desk--one-twelfth"></div><!--
@@ -32,6 +33,33 @@
                 <h2><?php the_sub_field('title'); ?></h2>
                 <p><?php the_sub_field('text'); ?></p>
             </section>
-        <?php
+        <?php } else { ?>
+            <section class="section--image home__kids">
+                <div class="grid">
+
+                    <div class="grid__item palm-hide desk--one-twelfth"></div><!--
+                    -->
+                    <div class="grid__item palm-hide lap--one-half desk--twelfths wide-desk--four-twelfths">
+                        <div class="section--text">
+                            <h2><?php the_sub_field('title'); ?></h2>
+                            <p><?php the_sub_field('text'); ?></p>
+                        </div>
+                    </div><!--
+                    --><div class="grid__item palm-hide lap-hide desk--one-twelfth"></div><!--
+
+                    --><div class="grid__item one-whole lap--one-half desk--five-twelfths">
+                        <picture>
+                            <img src="<?php the_sub_field('photo'); ?>">
+                        </picture>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section--text lap-hide desk-hide wide-desk-hide">
+                <h2><?php the_sub_field('title'); ?></h2>
+                <p><?php the_sub_field('text'); ?></p>
+            </section>
+        <?php }
+        $i++;
     }
 } ?>
