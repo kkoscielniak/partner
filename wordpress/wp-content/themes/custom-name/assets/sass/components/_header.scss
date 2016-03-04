@@ -211,7 +211,7 @@ header {
 
 .znany-lekarz-trigger {
 
-    display: inline-block;
+    display: block;
     color: $white;
     font-family: 'Lovelo Black';
     font-size: 20px;
@@ -224,6 +224,7 @@ header {
     }
 
     @include min-screen($desktop) {
+        display: inline-block;
         margin-left: 30px;
         font-size: 16px;
         color: #ffc299;
